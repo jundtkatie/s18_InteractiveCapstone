@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href="css/adventure.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<title>Vegan Challenge</title>
+
+<script>
+$(document).ready(function(){
+    $("#option1").click(function(){
+        $("#result").show();
+    });
+    $("#option1").click(function(){
+        $("#story").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#option2").click(function(){
+        $("#result").show();
+    });
+    $("#option2").click(function(){
+        $("#story").hide();
+    });
+});
+
+
+</script>
+
+
+
+</head>
+
+<body> 
+
+<!-- Scenario -->
+<div id="story">	
+	<p class="question">Hypothetical scenario in which you will be faced with a difficult instance to maintain your vegan diet.</p>
+
+	<p class="whatyoudo">WHAT DO YOU WANT TO DO?</p>
+		<div class="answer"> <p id="option1">Option 1</p></div>
+		<div class="answer"> <p id="option2">Option 2</p></div>
+
+		<h2><span id="exit"><a href="index.html">I CAN'T DO THIS</a></span></h2>
+</div>
+
+<!-- Response -->
+<div id="result" class="response center-vertically static">
+	<div class="container centered">
+		<div class="circle">
+			<div class="title">Result</div>
+			<div class="text">This is a test paragraph telling you something interesting as a response to your option of choice. Take heed, weary traveler, the journey is far from over.</div>
+				<div class="button-holder">
+					<a href="scenario5.html" class="button">CONTINUE</a>
+				</div>
+		</div>
+	</div>	
+</div>
+
+
+</body> 
+</html>
+
