@@ -1,0 +1,792 @@
+#stuffA {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hoverA:hover + #stuffA {
+    opacity: 1;
+  }
+
+#stuffB {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  opacity: 0;
+  left: 300px;
+  }
+  .hoverB:hover + #stuffB {
+    opacity: 1;
+  }
+
+#stuffC {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  opacity: 0;
+  left: 300px;
+  }
+  .hoverC:hover + #stuffC {
+    opacity: 1;
+  }
+
+#stuffD {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  opacity: 0;
+  left: 300px;
+  }
+  .hoverD:hover + #stuffD {
+    opacity: 1;
+  }
+
+#stuffE {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  opacity: 0;
+  left: 300px;
+  }
+  .hoverE:hover + #stuffE {
+    opacity: 1;
+  }
+
+
+#stuff1 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover1:hover + #stuff1 {
+    opacity: 1;
+  }
+
+  #stuff2 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover2:hover + #stuff2 {
+    opacity: 1;
+  }
+
+ #stuff3 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover3:hover + #stuff3 {
+    opacity: 1;
+  }
+
+ #stuff4 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover4:hover + #stuff4 {
+    opacity: 1;
+  }
+
+ #stuff5 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover5:hover + #stuff5 {
+    opacity: 1;
+  }
+
+ #stuff6 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover6:hover + #stuff6 {
+    opacity: 1;
+  }
+
+ #stuff7 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover7:hover + #stuff7 {
+    opacity: 1;
+  }
+
+   #stuff8 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover8:hover + #stuff8 {
+    opacity: 1;
+  }
+
+ #stuff9 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover9:hover + #stuff9 {
+    opacity: 1;
+  }
+
+ #stuff10 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover10:hover + #stuff10 {
+    opacity: 1;
+  }
+
+ #stuff11 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover11:hover + #stuff11 {
+    opacity: 1;
+  }
+
+
+#stuff12 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover12:hover + #stuff12 {
+    opacity: 1;
+  }
+
+#stuff12_2 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  }
+  .hover12:hover + #stuff12_2 {
+    opacity: 1;
+  }
+
+ #stuff13 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  }
+  .hover13:hover + #stuff13 {
+    opacity: 1;
+  }
+
+#stuff14 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  }
+  .hover14:hover + #stuff14 {
+    opacity: 1;
+  }
+
+#stuff14_2 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover14:hover + #stuff14_2 {
+    opacity: 1;
+  }
+
+#stuff15 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover15:hover + #stuff15 {
+    opacity: 1;
+  }
+
+#stuff16 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover16:hover + #stuff16 {
+    opacity: 1;
+  }
+
+#stuff17 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover17:hover + #stuff17 {
+    opacity: 1;
+  }
+
+#stuff18 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover18:hover + #stuff18 {
+    opacity: 1;
+  }
+
+#stuff19 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover19:hover + #stuff19 {
+    opacity: 1;
+  }
+
+#stuff20 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover20:hover + #stuff20 {
+    opacity: 1;
+  }
+
+#stuff21 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover21:hover + #stuff21 {
+    opacity: 1;
+  }
+
+#stuff22 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover22:hover + #stuff22 {
+    opacity: 1;
+  }
+
+#stuff23 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover23:hover + #stuff23 {
+    opacity: 1;
+  }
+
+ #stuff24 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover24:hover + #stuff24 {
+    opacity: 1;
+  }
+
+ #stuff25 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover25:hover + #stuff25 {
+    opacity: 1;
+  }
+
+#stuff26 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover26:hover + #stuff26 {
+    opacity: 1;
+  }
+
+#stuff27 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover27:hover + #stuff27 {
+    opacity: 1;
+  }
+
+#stuff28 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover28:hover + #stuff28 {
+    opacity: 1;
+  }
+
+#stuff29 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover29:hover + #stuff29 {
+    opacity: 1;
+  }
+
+#stuff30 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover30:hover + #stuff30 {
+    opacity: 1;
+  }
+
+#stuff31 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover31:hover + #stuff31 {
+    opacity: 1;
+  }
+
+#stuff32 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover32:hover + #stuff32 {
+    opacity: 1;
+  }
+
+#stuff33 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover33:hover + #stuff33 {
+    opacity: 1;
+  }
+
+#stuff34 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover34:hover + #stuff34 {
+    opacity: 1;
+  }
+
+#stuff35 {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hover35:hover + #stuff35 {
+    opacity: 1;
+  }
