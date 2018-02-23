@@ -1,0 +1,39 @@
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    border: 0px solid white;
+    padding-right: 40px;
+    padding-top: 0px;
+    right: 0px;
+    display: none;
+    position: fixed;
+}
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-family: freight-sans-condensed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    border: 0px solid white;
+}
+
+.topnav a:hover {
+    text-decoration-line: underline;
+}
+
+#navbox {
+    top: 755px;
+    left: 25px;
+    width: 85px;
+    height: 85px;
+    border-radius: 500px;
+    border: 0px solid ;
+    position: fixed;
+    display: inline-block;
+    z-index: 1000;
+}

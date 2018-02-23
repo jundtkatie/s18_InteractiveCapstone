@@ -1,0 +1,589 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="eyes.js"></script>
+<link rel='stylesheet' type='text/css' href="eyes.css">
+<link rel='stylesheet' type='text/css' href="topnav.css">
+
+
+<link rel="stylesheet" href="https://use.typekit.net/rhk7dsb.css">
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>   
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>Challenge!</title>
+
+
+<style>
+body, html {
+  color: black;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+.page {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+.scenario {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 57%;
+    padding-top: 50px;
+}
+
+.example {
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    padding-bottom: 100px; 
+}
+
+.wdywtd {
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.options {
+    font-family: freight-sans-condensed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    display: inline-block;
+    position: absolute;
+    float: right;
+    width: 35%;
+/*    padding-top: 200px;*/
+    top: 300px;
+    margin-right: 50px;
+}
+.options div{
+    display: block;
+    border: 3px solid black;
+    padding: 25px;
+    width: 400px;
+    margin-bottom: 50px; 
+}
+.options div:hover{
+    color: white;
+    background-color: black;
+    transition: 0.4s ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.results {
+    font-family: freight-sans-condensed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    color: black;
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.result {
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    padding: 90px;
+    border: 3px solid black;
+}
+
+#result1 {
+    display: none;
+}
+
+#result2 {
+    display: none;
+}
+
+.source {
+    font-size: .4em;
+}
+.source:first-child {
+    margin-top: 25px;
+    font-size: .4em;
+}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $('#navbox').click(function() {
+    $('.topnav').toggle();
+  });
+});
+
+$(document).ready(function(){
+    $("#option1").click(function(){
+        $("#result1").show();
+        $(".scenario").hide();
+        $(".options").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#option2").click(function(){
+        $("#result2").show();
+        $(".scenario").hide();
+        $(".options").hide();
+    });
+});
+
+
+</script>
+
+</head>
+
+<body> 
+<div class="topnav">
+    <a href="facts_advice.html" class="active">FACTS + ADVICE</a>
+    <a href="challenge.html">CHALLENGE</a>
+    <a href="index.html">HOME</a>
+</div>
+
+<div id="navbox"></div>
+<canvas class="eyes" id="eyes"></canvas>
+
+<div class="page">
+    <div id="day1">
+        <div class="scenario">
+            <div class="example">You usually eat scrambled egg for breakfast.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Stick to what you think you know</div>
+            <div id="option2">Try something new</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">The USDA admitted that eggs cannot legally be labeled: Nutritious, Low Fat, Part of a Balanced Diet, Low Calorie, Healthful, Healthy, Good for You, or Safe.
+                <div class="source"><a href="https://nutritionfacts.org/video/who-says-eggs-arent-healthy-or-safe/">Greger, M.D., Michael "Who Says Eggs Aren't Healthy or Safe?". NutritionFacts.org video. Volume 17. Feb. 17th, 2014</a></div>
+                <div class="source"><a href="https://nutritionfacts.org/video/eggs-and-cholesterol-patently-false-and-misleading-claims/">Greger, M.D., Michael "Eggs & Cholesterol: Patently False and Misleading Claims". Volume 13. July 3rd, 2013</a></div>
+            </div>
+            <div class="result">Eating 1 egg a day is just as bad as smoking five cigarettes per day for life expectancy.
+                <div class="source"><a href="http://www.med.mcgill.ca/epidemiology/hanley/c609/articles/EggyolkPlaqueSmoking.pdf">Spence, J. David, et al "Egg yolk consumption and carotid plaque". Artheroslcerosis xxx (2012) 1-5</a></div>
+                <div class="source"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3105270/pdf/kwq368.pdf">Baer, Heather J, et al "Risk Factors for Mortality in the Nurses' Health Study: A Competing Risks Analysis". American Journal of Epidemiology. Vol. 173, No. 3</a></div>
+                <div class="source"><a href="https://nutritionfacts.org/video/eggs-vs-cigarettes-in-atherosclerosis/">Greger, M.D, Michael "Eggs vs. Cigarettes in Artherosclerosis". NutritionFacts.org video. Volume 12. March 11th, 2013</a></div>
+            </div>
+        </div>
+        <div id="result2" class="results">
+            <div class="result">Remember that being vegan is about reducing suffering – it’s not about being perfect. So if you are obsessing over micro-ingredients, try and remember that helping animals, your health, and the environment can be as simple as choosing a bean burrito over a steak one, or tofu scramble instead of eggs.</div>
+            <div class="result">Pancakes, waffles and muffins are easy to make, and the internet is filled with delicious vegan recipes for them. But if sweet or starchy breakfasts aren’t for you, silken tofu is a tasty egg alternative in omelets, scrambles, and Quiche.</div>
+        </div>
+    </div>
+    
+<!--     <div id="day2">
+        <div class="scenario">
+            <div class="example">Most of your friends and family eat meat at every meal, but telling them to accommodate you would seem selfish.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Trust that they love you and accept your choices</div>
+            <div id="option2">Do not tell them</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Remember to take things at your own pace, and don’t be too hard on yourself if you slip up. This is about you making healthy, compassionate choices for yourself, animals, and the planet.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">There are people who take it upon themselves to point out instances of “failure” in vegans in their lives. It is very difficult for most people to attempt a vegan diet, and that challenge increases when they feel like the people around them are waiting for them to fail.</div>
+        </div>
+    </div>
+
+    <div id="day3">
+        <div class="scenario">
+            <div class="example">Your dad has invited the whole family over, and is making your favorite: chicken Parmesan, goat cheese salad, and chewy chocolate chip brownies.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Say nothing</div>
+            <div id="option2">Come out as vegan to your dad</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">The most important thing to keep in mind is that there is no such thing as a perfect vegan. If you make a mistake, or chose to “break vegan” for any number of reasons, it doesn’t change the larger positive impact that your diet has created.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Don’t worry! Let them know how to veganize all of the family favorites. They’ll taste delicious, and your family will realize that the dish, and you, are still the same as before -just vegan!<br><br>It’s best to let your relatives know ahead of time that you’re vegan. You can offer to prepare a dish to share or ask to help in the kitchen so that you’ll have a main course to enjoy.</div>
+        </div>
+    </div>
+
+    <div id="day4">
+        <div class="scenario">
+            <div class="example">It’s common knowledge that you need to drink milk to build strong bones, right?</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Find calcium elsewhere</div>
+            <div id="option2">You only have one skeleton, keep drinking cow’s milk</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">You can easily get the calcium your body needs from leafy greens and fortified dairy-free milks.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Milk does not grow strong bones. In fact, countries with the highest rates of dairy consumption have the highest rates of osteoporosis.
+                <div class="source"><a href="http://www.bmj.com/content/349/bmj.g6015">Michaelsson, Karl, et al "Milk intake and risk of mortality and fractures in women and men: cohort studies". British Medical Journal 2014, 349</a></div>
+                <div class="source"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1602030/">Lanou, Amy Joy "Bone health in children". British Medical Journal. 2006 Oct 14; 333(7252): 763-764</a></div>
+                <div class="source"><a href="http://ajcn.nutrition.org/content/77/2/504.long">Feskanich, Diane, et al "Calcium, vitamin D, milk consumption, and hip fractures: a prospective study among postmenopausal women". The American Journal of Clinical Nutrition. Feb 2003 vol. 77 no.2 504-511</a></div>
+                <div class="source"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3004072/">Dhanwal, Dinesh K, et al "Epidemiology of hip fracture: Worldwide geographic variation". Indian Journal of Orthopaedics. 2011 Jan-Mar; 45(1): 15-22</a></div>
+                <div class="source"><a href="http://www.dairyinfo.gc.ca/index_e.php?s1=dff-fcil&s2=cons&s3=consglo">"Global Consumption of Dairy Products". Canadian Dairy Information Center.</a></div>
+            </div>
+            <div class="result">Calcium is a mineral, not an animal ingredient. And there are plenty of calcium fortified foods available at your local grocery store, so there is no need to depend on animals for your mineral requirement.</div>
+        </div>
+    </div>
+
+    <div id="day5">
+        <div class="scenario">
+            <div class="example">You missed your alarm this morning and if you stop to pack your lunch you could be late for work.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Race out the door. Vegan meal prep takes too long</div>
+            <div id="option2">Meals are important</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">There is a misconception that cooking for a vegan diet is time consuming and labor intensive. But if you look at the actual ingredients (plants), a vegan diet is completely possible without any cooking at all! </div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">The best way to cut down on the time and energy that you are spending in the kitchen is to stop eating meat, eggs, and dairy. These animal products spoil easily and (for the most part) require cooking. When compared to a plant-based diet where nearly all of the ingredients can be cooked, but do not require it for them to be safe to consume, time and energy don’t seem as problematic.</div>
+        </div>
+    </div>
+
+    <div id="day6">
+        <div class="scenario">
+            <div class="example">Your best friend is disappointed that you won’t be able to make late night runs to Taco Bell with them anymore.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Assure her that everything will be okay</div>
+            <div id="option2">Retreat into a cave of solitude</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Taco Bell’s Bean Burrito (without the cheese) is totally vegan! And so are all of these other yummy treats:<br><br>Oreos, Duncan Hines Creamy Home-Style Frosting and cake mixes, Jell-O Instant Pudding Mix, Smucker’s Marshmallow Ice Cream Topping, Hershey’s Chocolate Syrup, Betty Crocker’s Bac-O’s Bacon Flavor Bits, Pillsbury Crescent Rolls, Ritz Crackers, Unfrosted Pop-Tarts, Pepperidge Farm Puff Pastry Sheets, Lindt Excellence Cocoa Bars (in 70%, 85% and 90%), Famous Amos Sandwich Cookies (in Chocolate, Oatmeal Macaroon, Peanut Butter and Vanilla), Goya Flan, Nutter Butters, Nature Valley Crunchy Granola Bars (in Apple Crisp, Cinnamon, Peanut Butter, Peanut Butter Crunch, Roasted Almond and Maple Brown Sugar), Nabisco Original Graham Crackers, Krispy Kreme Fruit Pies (in Apple, Cherry and Peach), Thomas’s New York Style Bagels (in Blueberry, Cinnamon Swirl, Everything and Plain), Super Pretzel Baked Soft Pretzel, Chocolate Chip Teddy Grahams, DQ’s Star Kiss Bars, Sara Lee’s Frozen Pies (in Cherry and Apple), Mast Brother’s Chocolate, Trader Joe’s Speculoos Cookies, Trader Joe’s Pound Plus Chocolate Bars, Trader Joe’s Soft-Baked Snickerdoodles, and Ghiradelli Double Chocolate Brownie Mix</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">You don’t have to change who you are just because you’ve decided to change what you eat. A vegan diet is the best way to reduce your carbon footprint, prevent suffering, and improve lives. <br><br>There are dietary vegans, and lifestyle vegans. <br>There are people who view veganism as an all-or-nothing choice. <br>There are vegans who see their veganism as an ideal, rather than the law.<br><br>What matters most is your desire in your heart to improve the lives of animals, other people, the environment, or your own health. As a vegan, it is up to you to decide what matters most, and how you decide to act upon those values is up to you to decide.</div>
+        </div>
+    </div>
+
+    <div id="day7">
+        <div class="scenario">
+            <div class="example">Your mom tells you that if you eat a plant based diet you wont get enough iron/protein/nutrients, which will make you skinny and weak. You don’t have time to be fatigued.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Take a vitamin</div>
+            <div id="option2">Listen to your mother</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">You won’t suffer from a loss of iron, at least not because you have stopped eating meats. In fact, a serving of kale has more iron than beef! But if iron deficiency is a concern for you, kale, white beans, spirulina, spinach, lentils, and quinoa are all great sources of iron... Or you could take a vitamin.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Have you ever heard of the word kwashiorkor? No? That is the proper term for protein deficiency. There isn’t any necessary nutrient found in animal products that you can’t get from a plant source. In fact, all protein originally comes from plants!<br><br>Vegan meals can provide all the nutrients that we need, minus all the saturated fat, cholesterol, and other icky stuff found in animal flesh, eggs, and dairy foods! A vegan diet still provides you with the same amount of nutrients as an omnivore diet, you’ll just find those nutrients in much healthier places.
+                <div class="source"><a href="http://circ.ahajournals.org/content/105/25/e197.full">McDougall, John "Plant Foods Have a Complete Amino Acid Composition". Circulation. June 25, 2002</a></div>
+                <div class="source"><a href="http://www.vrg.org/nutrition/protein.php">Mangels, PhD, RD, Reed "Protein in the Vegan Diet". The Vegetarian Resource Group</a></div>
+                <div class="source"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081456/">Rizzo, Nico S, et al "Nutrient Profiles of Vegetarian and Non-Vegetarian Dietary Patterns". Journal of the Academy of Nutrition and Dietics. 2013 Dec; 113(12): 1610-1619</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="day8">
+        <div class="scenario">
+            <div class="example">You’re a picky eater and don’t like vegetables. If only vegan meat and cheese tasted like the real thing.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Choose to have a life without (dairy) cheese</div>
+            <div id="option2">Dwell on never eating (dairy) cheese again</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Cheese itself is the single best food for compromising human health. The manufacturing of cheese includes the addition of large amounts of salt, and results in a highly processed product. As an animal product, it is subject to bioaccumulation, and is naturally high in saturated fats, cholesterol, and hormones. Cow’s milk is a hormonal fluid, designed by nature to turn a calf into a full grown cow. When you chose to consumer milk or other dairy products, you are also consuming the hormones, antibiotics, and other environmental toxins that the cow was subjected to while producing that product. 
+                <div class="source"><a href="https://www.hsph.harvard.edu/nutritionsource/top-food-sources-of-saturated-fat-in-the-us/">"Top Food Sources of Saturated Fat in the U.S." Harvard T.H. Chan School of Public Health</a></div>
+                <div class="source"><a href="http://www.breastcancer.org/research-news/20130327">"Study Suggests Full-Fat Dairy Products May Be Linked to Worse Survival" BreastCancer.org</a></div>
+                <div class="source"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4524299/">Malekinejad, Haasan & Rezabakhsh, Aysa "Hormones in Dairy Foods and Their Impact on Public Health – A Narrative Review Article". Iranian Journal of Public Health. 2015 Jun; 44(6): 742-758</a></div>
+            </div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">There is life after cheese, and there are endless amounts of delicious options for all kinds of cheesy dishes.<br><br>Not wanting to give up dairy products is among the most common reason omnivores have for not being able to imagine committing to a plant-based diet. And it makes sense, these products are literally addictive. Casein protein, the main protein in dairy products, especially in cheese, creates casomorphins. Not only do casomorphins have a similar, drug-like, effect as opioids, but they may play a role in sudden infant death syndrome (SIDS) and autism.
+                <div class="source"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4487594/">Nguyen, Duc Doan, et al "Formation and Degradation of Beta-Casomorphins in Dairy Processing". Critical Reviews in Food Science and Nutrition. 2015 Dec 6; 55(14): 1955-1967</a></div>
+                <div class="source"><a href="http://www.pcrm.org/health/diets/ffl/newsletter/breaking-the-cheese-addiction-step-3-cleansing-the">"Breaking the Cheese Addiction: Step 3 Cleansing the Palate". Physicians Committee for Responsible Medicine</a></div>
+                <div class="source"><a href="http://nutritionfacts.org/video/cows-milk-casomorphin-and-autism/">Greger, M.D., Michael "Cow's Milk Casomorphin & Autism". NutritionFacts.org video. Volume 8, May 9th, 2012</a></div>
+                <div class="source"><a href="https://www.researchgate.net/publication/26646213_-Casomorphins-7_in_infants_on_different_type_of_feeding_and_different_levels_of_psychomotor_development">Kost, Natalya V, et al "B-Casomorphins-7 in infants on different type of feeding and different levels of psychomotor development". Peptides 30(10): 1854-1860 August 2009</a></div>
+                <div class="source"><a href="https://nutritionfacts.org/video/cows-milk-casomorphin-and-crib-death/">Greger, M.D., Michael "Cow's Milk Consumption & Crib Death". NutritionFacts.org video. Volume 8. May 8th, 2012</a></div>
+                <div class="source"><a href="http://onlinelibrary.wiley.com/doi/10.2903/j.efsa.2009.231r/epdf">Noni, Ivano De, et al "Review of the potential health impact of B-casomorphins and related peptides". European Food Safety Authority Scientific Report (2009) 231, 1-107</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="day9">
+        <div class="scenario">
+            <div class="example">It’s your grandpa’s birthday, and he wants to go out to the local steakhouse for dinner.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Talk to your waiter</div>
+            <div id="option2">Throw a selfish fit and demand he choose a different restaurant</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Many restaurants are happy to accommodate dietary preferences. The key here is to be clear and polite in explaining your diet. Ask if you can make a substitution to an existing menu item, or it a vegetarian dish can be made without the egg/dairy products.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">A meal without meat is still a meal, and the notion that vegetables, starch, and other common components in the average omnivore diet are merely sides is simply untrue. Vegetables as a side to the meat is a frame of reference.</div>
+        </div>
+    </div>
+
+    <div id="day10">
+        <div class="scenario">
+            <div class="example">You’re on a date with someone new that you really like. It’s going great, until they ask if you want to grab a bite to eat.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Politely decline with some excuse about your epileptic cat</div>
+            <div id="option2">Tell them you are vegan!</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">If taking a stand against environmental injustice and animal cruelty is something that you care about, the person you date should respect that about you. And who knows, they might just think that it is the hottest thing ever!</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Be vegan and be proud! You are making an empowering and compassionate choice.</div>
+        </div>
+    </div>
+
+    <div id="day11">
+        <div class="scenario">
+            <div class="example">The flu has been going around – and it just hit your house. You’re running a fever and have the chills. A bowl of chicken noodle soup could be just the thing to help you kick this cold.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Anything to feel better again</div>
+            <div id="option2">Cozy up and watch another movie</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Being a vegan is not all or nothing – it is better for your health, the environment, and the animals to be vegan, at whatever degree you can manage, than to do nothing at all. </div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">You can feel good knowing that you won’t have sentenced anyone else to death while you’re thinking about why you’re thankful for your life.</div>
+        </div>
+    </div>
+
+    <div id="day12">
+        <div class="scenario">
+            <div class="example">Your friends are throwing a potluck, and it’s your turn to bring the main dish.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Try a new recipe and surprise everyone with your vegan dish</div>
+            <div id="option2">Stick to the crowd favorites</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">It may be helpful to hold off on mentioning that a dish is vegan until after everyone has tried it. Many people, vegans included, hold preconceived notions about what it means to follow a plant-based diet or lifestyle. By waiting to announce that your amazing Mac ‘N’ Cheese is actually vegan and completely dairy free, your friends will have had the opportunity to feel more open to trying the dish.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">You might want to bring your own food to social gatherings. If you go to a party, there will likely be “accidentally vegan” chips as well as salsa, soda, fruit platters, and more vegan-friendly foods for you to eat. But if you don’t want to take the risk of there not being any options for you, bring your own food.<br><br>Bonus: Taking plant-based foods to parties and family dinners is a great way to show others that eating vegan is delicious.</div>
+        </div>
+    </div>
+
+    <div id="day13">
+        <div class="scenario">
+            <div class="example">There is free pizza in the break room. It smells amazing. There is a note that says, “Help yourself!”</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Eat a slice of pizza</div>
+            <div id="option2">Skip the slice</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Try to reframe the way you think about eating a plant-based diet. It might seem tricky, but don’t think of being vegan as a limitation. This will only make you feel as though you are missing out.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Try this Easy Vegan Mac and Cheese recipe instead!<br><br>Combine ½ cup of pasta, ½ cup of water, and a pinch of salt in a microwaveable bowl. Microwave for 4-5 minutes. Add 2 tbsp of almond milk, 2 tbsp of vegan butter, 2 tbsp of nutritional yeast, and another pinch of salt. Stir. Microwave again for 30 seconds. Sprinkle with paprika, or your favorite mac and cheese seasonings, and enjoy!</div>
+        </div>
+    </div>
+
+    <div id="day14">
+        <div class="scenario">
+            <div class="example">Your non vegan friend joking tells you you’ll have to sell your car because of the leather seats.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Feel ashamed and quit the challenge</div>
+            <div id="option2">Remind yourself of your reasons for your veganism</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Learning to deal with people who are made uncomfortable by your decision to live differently from them is one of the most difficult aspects of being vegan. People who try to intimidate or scare vegans into conforming to their omnivore way of life can be a huge deterrent for someone who is still new to the diet. The best way to combat this negativity is to arm yourself with facts.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">You will, more likely than not, encounter someone who does not want to accept your lifestyle or diet as a vegan. It it still culturally normal and acceptable to eat meat, so it may appear to be socially extreme to change your lifestyle, habits, and choices – but that doesn’t mean that your choices are wrong, and these awkward confrontations can be an opportunity to educate your friends. </div>
+        </div>
+    </div>
+
+    <div id="day15">
+        <div class="scenario">
+            <div class="example">You love food, and often relish eating out and experiencing iconic dishes when traveling overseas.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Cancel your trip</div>
+            <div id="option2">Decide to embrace the adventure and your diet</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">So much of experiencing other cultures is in the food. But eating a plant-based diet absolutely doesn’t mean that you need to abstain from this aspect of travel. Americans are the largest consumers of meat and dairy in the world, so it is unlikely that your travels will lead you to a place where you are unable to find anything to eat. When it comes to iconic cultural dishes, see if there are iconic cultural dishes that are vegetarian, you might be surprised! By tasting an iconic cultural meal that is plant-based, you aren’t losing out on the experience of that place, because you are experiencing something of equal cultural significance. </div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Traveling on a plant-based diet can be much easier than you think!<br><br>It helps to research your destination, apps like HappyCow are useful for finding hidden vegan/vegetarian places near your destination. <br><br>If you are staying with friends, family, or being hosted during your travels, you should kindly let them know ahead of time about your dietary preferences. If you’re respectful about your diet, other people will usually be, too.</div>
+        </div>
+    </div>
+
+    <div id="day16">
+        <div class="scenario">
+            <div class="example">Your share with your friends that you are experimenting with a plant-based diet, and you thought it went well, until you notice that they’ve stopped inviting you when they go out together.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Start eating meat again and blame veganism for the loss of your friendships</div>
+            <div id="option2">Offer to bring a vegan dish to the next group dinner</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">It’s difficult to face any challenge alone, and transitioning to a plant-based diet is no exception, particularly when so much of our social culture revolves around food.<br><br>There are many clubs, organizations, and even online forums for plant-based community building! If you find that you are feeling alone, isolated, or like your plant-based diet is overwhelmingly a source of limitations in your life, it could be time to make some vegan friends. It isn’t that your current network of friends and loved ones can’t fit into your life now that you are vegan, rather many find that having a community that they can turn to for support, particularly in the beginning, makes acclimating to a plant-based diet and lifestyle feel much more natural.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Not everyone will be as excited as you are about your new dietary style, but one of the easiest ways to get your friends interest in learning more about plant-based food is share it with them. Try cooking something they couldn’t picture being vegan (e.g., creamy vegan mac ‘n’ cheese, fish-free fillets, Korean “barbecue,” etc.), and wow their taste buds. Use this as an opportunity to show your friends what they are missing out on.</div>
+        </div>
+    </div>
+
+    <div id="day17">
+        <div class="scenario">
+            <div class="example">Your roommate has started cooking bacon in the mornings. The smell permeates the apartment.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Bacon, god I love bacon!</div>
+            <div id="option2">Remember your resolve and close your door</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">A World Health Organization Report has classified bacon and sausage as carcinogenic to humans.<br><br>It isn’t possible to live a perfect life, and if you try to hold yourself to a perfect vegan life, you will eventually fail. Instead, remember the reasons why you are interested in eating this way, and remember that every time you chose to exclude animal products from your diet, you are making a positive difference.
+                <div class="source"><a href="https://www.npr.org/sections/thesalt/2015/10/26/451211964/bad-day-for-bacon-processed-red-meats-cause-cancer-says-who"> Aubrey, Allison. "Bad day for bacon: Processed Meats Cause Cancer WHO Says". npr: the salt. Oct. 2015</a></div>
+                <div class="source"><a href="http://www.thelancet.com/pdfs/journals/lanonc/PIIS1470-2045(15)00444-1.pdf">"Carcinogenicity of consumption of red and processed meat". The Lancet Oncology. Vol. 16. 2015</a></div>
+                <div class="source"><a href="https://www.iarc.fr/en/media-centre/pr/2015/pdfs/pr240_E.pdf">"IARC Monographs evaluate consumption of red meat and processed meat". World Health Organization International Agency for Research on Cancer. PRESS RELEASE N.240. Oct. 2015</a></div>
+            </div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">If you are really struggling with the idea of living the rest of your life without your favorite food, you're not alone! Many vegans weakness from time to time, and even the old-timers miss foods too. There are vegan replacements, substitutes, and alternatives for just about any craving you might have that can help make it easier to transition away from animal products.</div>
+        </div>
+    </div>
+
+    <div id="day18">
+        <div class="scenario">
+            <div class="example">You try using vegan egg substitute in your baking, but the the cupcakes don’t turn out. </div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Try vegan recipes</div>
+            <div id="option2">Give up</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">For every egg in a baking recipe, swap a ripe mashed banana<br><br>Or chia seeds (1 tbsp + 3 tbsp water)<br><br>Or ground flax seeds (1 tbsp + 3 tbsp water)<br><br>Use canned coconut milk as a substitute for heavy cream</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">A plant-based diet is a challenging lifestyle to adopt, but as with many things in life, the most difficult challenges end up being the most rewarding.  </div>
+        </div>
+    </div>
+
+    <div id="day19">
+        <div class="scenario">
+            <div class="example">You find that you are constantly on the go, so it’s hard to find time to meal prep the way you feel a vegan would need to.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Pre packed foods are gross</div>
+            <div id="option2">Plan ahead whenever possible</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Packing your own food for lunches is a great way to ensure that you will always have food available. Simple snacks like veggie sticks with hummus, dried fruit, trail mix, bars, nuts, and fresh fruit are convenient to grab if you are in a hurry, and in combination they create a very satisfying meal.<br><br>Try to keep protein bars or vegan snacks – even if it’s just a bag of nuts or pretzels – in your backpack for when you get hungry on the go. <br>But if you are really in a pickle, 7 Eleven and Taco Bell are crowd favorites among vegans.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">No matter how organized you are, there will be times when you find yourself in a not-so-vegan predicament. Try to keep your favorite vegan snacks around (in your purse, backpack, locker, car, etc.) for these dire instances, they will help tide you over until you can eat a proper meal.<br><br>If you worry about not having the time or brain power to come up with a meal from scratch during the week, try preparing a large portion of beans and rice. You can eat this with other dishes that you do have time to prepare throughout the week.</div>
+        </div>
+    </div>
+
+    <div id="day20">
+        <div class="scenario">
+            <div class="example">Vegan food items seem expensive, and you don’t recognize a lot of the ingredients in them.  </div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Money is tight, put off the challenge</div>
+            <div id="option2">Price compare yourself</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Veganism is not expensive. Beans, rice, potatoes, and veggies are all some of the cheapest, easiest to find, and healthiest things you could eat.<br><br>Meat, dairy, and eggs are expensive… And so are health bills! You may not be worried about heart disease, cancer, and strokes, yet. But diets high in animal protein, cholesterol (which is nearly impossible to consume with a vegan diet) and saturated fat play a key role in the leading causes of death in America.<br><br>When you go grocery shopping, come up with meal ideas before making your grocery list. Stir fry, pasta, and chili are inexpensive and easy to make (and they are also vegan!) Once you are at the store, be sure to stock up on staples (beans, grains, nuts, and frozen fruits/vegetables), and when possible, buy them in bulk.</div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Pasta sauce and noodles, black beans and rice, vegetarian chili, veggie (or tofu) stir fry… All of these can be found at your local grocery store, and are cheap too!<br><br>1 serving of lentils (1 cup) (18g of protein) costs approximately $0.20<br>I serving of steak (4 oz.) (22g of protein) costs approximately $4.00<br><br>You don’t have to go out and buy extravagant specialty products to be vegan, it’s as simple as checking the ingredients on everyday products.</div>
+        </div>
+    </div>
+
+    <div id="day21">
+        <div class="scenario">
+            <div class="example">You want to put on muscle. You aren’t sure if someone can build muscle while following a vegan diet.</div>
+            <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+        </div>
+        <div class="options">
+            <div id="option1">Meat is the best source of protein</div>
+            <div id="option2">Take a chance on plant-based proteins</div>
+            <a href="index.html"><div>I can’t do this!</div></a>
+        </div>
+        <div id="result1" class="results">
+            <div class="result">Great sources of protein:<br>1 cup of cooked lentils (18g)<br>1 cup of cooked black beans (15g)<br>1 veggie burger patty (13g)<br>4 oz of firm tofu (11g)<br>1 medium bagel (9g)<br>1 cup of cooked pasta (8g)<br>1 cup of cooked quinoa (8g)<br>2 Tbsp of peanut butter (8g)<br>1 cup of plain soy milk (7g)<br>6 oz of plain soy yogurt (6g)<br>2 slices of whole wheat bread (5g)<br>1 medium potato (4g) </div>
+        </div>
+        <div id="result2" class="results">
+           <div class="result">Many long-time vegans live healthy lives with plenty of protein by finding it in the foods that they already love. Quinoa, peanut butter, nuts, beans, avocados, tofu, soy, tempeh and green vegetables are all great sources of protein.<br><br>Plant-based Athlete Case Studies<br><a href="https://www.gq.com/story/vegan-diet-of-nfl-player-david-carter">David Carter: former NFL defensive lineman</a>
+           <br><a href="http://www.greatveganathletes.com/tim-shieff-vegan-freerunner">Timothy Shieff: world champion freerunner, ninja warrior</a>
+           <br><a href="https://www.facebook.com/Mu-the-ageless-drug-free-athlete-Plant-strongvegan-826194394120198/">Mu Jin Han: ageless drug free athlete</a>
+           <br><a href="https://www.riseofthevegan.com/blog/vegan-tia-blanco-surfing-world-champion">Tia Blanco: professional surfer, ISA world surf champion (x2)</a>
+           <br><a href="https://www.outsideonline.com/1905351/plant-based-ultraman">Rich Roll: ultra-endurance athlete and author of Finding Ultra & Plantpower Way</a>
+            </div>
+        </div>
+    </div> -->
+
+</div>
+
+</body> 
+</html>
+

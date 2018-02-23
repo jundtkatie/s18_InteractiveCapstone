@@ -1,0 +1,178 @@
+body, html {
+  color: black;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+.landing {
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    display: block;
+}
+#choicefact {
+  color: black;
+  font-size: 2em;
+  display: inline-block;
+  float: left;
+  margin-top: 300px;
+  position: relative;
+  overflow: hidden;
+  width: 45%;
+  text-align: center;
+  transition: 0.4s ease-out;
+  z-index: 1;
+}
+#choicefact:hover {
+  color: white;
+  background-color: black;
+  transition: 0.4s ease-out;
+}
+
+#choiceadvice {
+  color: black;
+  font-size: 2em;
+  display: inline-block;
+  float: right;
+  margin-top: 300px;
+  position: relative;
+  overflow: hidden;
+  width: 45%;
+  text-align: center;
+  transition: 0.4s ease-out;
+}
+#choiceadvice:hover {
+  color: white;
+  background-color: black;
+  transition: 0.4s ease-out;
+}
+
+#selectedfacts {
+    display: none;
+}
+#selectedfacts--show { 
+    display: inline-block; 
+}
+
+#selectedadvice {
+    display: none;
+}
+#selectedadvice--show { 
+    display: inline-block;
+}
+
+h1 {
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    margin: auto; 
+}
+
+h2 {
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    margin: auto; 
+}
+
+#sidenav {
+    overflow: hidden;
+    position:fixed;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+    display: inline-block;
+    padding: 0px;
+    float: left;
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    opacity: 1;
+    z-index:101;
+}
+
+#sidenav a {
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+
+}
+
+#sidenav .subsection {
+    padding-left: 40px;
+}
+#sidenav a:hover {
+    border: 3px solid black;
+    background: white;
+}
+
+#sidenav a:active {
+    border: 3px solid black;
+    background: white;
+}
+
+a:active {
+    border: 3px solid black;
+    background: white;
+}
+
+.fact_section {
+  font-family: freight-sans-condensed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: auto;
+  padding-left: 550px;
+  padding-right: 150px;
+  font-size: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.entry {
+  padding-bottom: 30px;
+}
+
+.fact:hover {
+    text-decoration: underline;
+}
+
+.fact_section > div {
+    padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.factsubheader {
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#casestudies {
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-bottom: 100px;
+}
+
+#casestudies .factsource {
+    margin-left: 130px;
+}
+
+.factsource {
+    margin: 5%;
+    font-size: .4em;
+    text-align: right;
+    text-decoration: none;
+    margin-left: 200px;
+    color: black;
+    display: none;
+}
+
+.factsource--show { 
+    display: block 
+}
