@@ -9,140 +9,81 @@
 <link rel='stylesheet' type='text/css' href="eyes.css">
 <link rel='stylesheet' type='text/css' href="topnav.css">
 
+<link rel='stylesheet'  href='mainbody.css' type='text/css'>
+<link rel='stylesheet'  href='stylesheet.css' type='text/css'>
 <link rel='stylesheet'  href='stylesheet_callouts.css' type='text/css'>
+
 <link rel="stylesheet" href="https://use.typekit.net/rhk7dsb.css">
 
 <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <title></title>
 
-<style>
-body, html {
-  color: black;
-  width: 100%;
-  height: 100%;
-  cursor: crosshair;
-}
+<title>Diet Dissonance</title>
 
-.header {
-  margin: auto;
-  padding-left: 150px;
-  padding-right: 150px;
-  font-size: 170px;
-  line-height: 200px;
-  display: inline-block;
-  position: relative;
-  font-family: freight-sans-compressed-pro, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  padding-top: 350px;
-  padding-bottom: 400px;
-}
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#navbox').click(function() {
+    $('.topnav').toggle();
+  });
+});
 
-#sidenav {
-    overflow: hidden;
-      position:fixed;
-    z-index: 1;
-    top: 20px;
-    left: 50px;
-    display: inline-block;
-    padding: 60px 0;
-    float: left;
-    font-family: freight-sans-compressed-pro, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    opacity: 1;
-    z-index:101;
-}
 
-#sidenav a {
-    padding: 8px 10px 8px 10px;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    display: block;
+$(document).ready(function () {
+  $("#sidenav").hide();
 
-}
+  function showSideNavigation() {
+    var animalsY = $('#animals').offset().top-200;
 
-#sidenav a:hover {
-    border: 3px solid black;
-    background: white;
-}
+    if($(window).scrollTop() > animalsY) {
+      $("#sidenav").show();
+    } else {
+      $("#sidenav").hide();
+    }
+  }
 
-#sidenav a:active {
-    border: 3px solid black;
-    background: white;
-}
+  var chapter = '';
 
-a:active {
-    border: 3px solid black;
-    background: white;
-}
+  $(window).scroll(function() {
+    showSideNavigation();
 
-.mainbody {
-   font-family: freight-sans-condensed-pro, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  margin: auto;
-  padding-left: 550px;
-  padding-right: 150px;
-  font-size: 70px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+    var scrollTop = $(window).scrollTop();
+    var hash = location.hash;
 
-.mainbody div {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+    if (scrollTop >= $('#ethicalmeat').offset().top) {
+      chapter = 'ethicalmeat';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#vegetarian').offset().top) {
+      chapter = 'vegetarian';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#people').offset().top) {
+      chapter = 'people';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#environment').offset().top) {
+      chapter = 'environment';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health').offset().top) {
+      chapter = 'health';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#animals').offset().top) {
+      chapter = 'animals';
+      $('#sidenav a').css({ border: 'none'});
+    } else {
+      chapter = '';
+    }
 
-.veganmeaning {
-  font-family: freight-sans-condensed-pro, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  margin: auto;
-  padding-left: 250px;
-  padding-right: 250px;
-  font-size: 70px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+    $('#sidenav a[href="#' + chapter + '"]').css({ border: '3px solid black'});
 
-span {
-  display: inline-block;
-  position: relative;
-  font-family: georgia;
-  font-weight: 600;
-  font-size: .75em;
-  text-transform: uppercase;
-   -moz-text-fill-color: white;
-  -webkit-text-fill-color: white;
-     -moz-text-stroke-color: black;
-  -webkit-text-stroke-color: black;
-     -moz-text-stroke-width: 2.5px;  
-  -webkit-text-stroke-width: 2.5px;
-}
+    if (scrollTop >= $('#ethicalmeat').offset().top + $('#ethicalmeat').height() -500) { 
+      $("#sidenav").hide(); }
+  });
+});
 
-span sup {
-  font-size: .65em;
-  -moz-text-stroke-width: 2px;  
-  -webkit-text-stroke-width: 2px;
-}
 
-span:hover {
-  -moz-text-fill-color: black;
-  -webkit-text-fill-color: black;
-     -moz-text-stroke-color: black;
-  -webkit-text-stroke-color: black;
-     -moz-text-stroke-width: 2.5px;  
-  -webkit-text-stroke-width: 2.5px;
-}
-
-</style>
+</script>
 </head>
 <body>
 <div class="topnav">
@@ -154,10 +95,12 @@ span:hover {
 <div id="navbox"></div>
 <canvas class="eyes" id="eyes"></canvas>
 
+
+
 <div class="header">WHAT DOES IT MEAN TO BE VEGAN?</div>
     <div class="veganmeaning"><span class="hoverA">Veganism</span> 
 
-        <div id="stuffA">NOUN<br>A person who does not eat or use animal products: I'm a strict vegan.<br><br>ADJECTIVE<br>Using or containing no animal products: A vegan diet.</div>
+        <div id="stuffA">NOUN<br>A person who does not eat or use animal products: <i>I'm a strict vegan.</i><br><br>ADJECTIVE<br>Using or containing no animal products: <i>A vegan diet.</i></div>
 
     represents a philosophy and way of living which seeks to exclude—as far as is possible and practicable—all forms of exploitation of, and cruelty to, other animals for food, clothing or any other purpose; and promotes the development and use of animal-free alternatives for the benefit of humans, other animals and the environment.</div>
 
@@ -374,22 +317,12 @@ span:hover {
     fear death, just as we do. No matter how they are treated when alive, they all experience the same fear when it comes to slaughter.</div>
 </div>
 
+<div class="bottom">
+<div class="bottomtext">IT TAKES THREE WEEKS TO CREATE A HABIT.</div>
 
-
-<script type="text/javascript">
-$("#sidenav").hide();
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 3200) {
-        $("#sidenav").slideDown();
-    }
-    else {
-        $("#sidenav").slideUp();
-    }
-});
-
-</script>
-
-
+<div class="bottomtext">COULD YOU CHANGE YOUR DIET?</div>
+  <div class="proveit"><a href="challenge.html">Prove it.</a></div>
+</div>
 
 </body>
 </html>

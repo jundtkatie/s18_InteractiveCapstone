@@ -1,0 +1,160 @@
+body, html {
+  color: black;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  margin: auto;
+}
+
+.header {
+  margin: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 170px;
+  line-height: 200px;
+  display: block;
+  position: relative;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-top: 200px;
+  padding-bottom: 400px;
+}
+
+#sidenav {
+    overflow: hidden;
+      position:fixed;
+    z-index: 1;
+    top: 20px;
+    left: 50px;
+    display: inline-block;
+    padding: 60px 0;
+    float: left;
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    opacity: 1;
+    z-index:101;
+}
+
+#sidenav a {
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+
+}
+
+#sidenav a:hover {
+    border: 3px solid black !important;
+    background: white;
+}
+
+#sidenav a:active {
+    border: 3px solid black;
+    background: white;
+}
+
+a:active {
+    border: 3px solid black;
+    background: white;
+}
+
+.mainbody {
+   font-family: freight-sans-condensed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: auto;
+  padding-left: 550px;
+  padding-right: 150px;
+  font-size: 70px;
+  padding-top: 100px;
+  margin-top: 100px;
+  padding-bottom: -400px;
+}
+
+.mainbody div {
+  padding-bottom: 200px;
+}
+
+.veganmeaning {
+  font-family: freight-sans-condensed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: auto;
+  padding-left: 250px;
+  padding-right: 250px;
+  font-size: 70px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  font-family: georgia;
+  font-weight: 600;
+  font-size: .75em;
+  text-transform: uppercase;
+   -moz-text-fill-color: white;
+  -webkit-text-fill-color: white;
+     -moz-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
+     -moz-text-stroke-width: 2.5px;  
+  -webkit-text-stroke-width: 2.5px;
+}
+
+span sup {
+  font-size: .65em;
+  -moz-text-stroke-width: 2px;  
+  -webkit-text-stroke-width: 2px;
+}
+
+span:hover {
+  -moz-text-fill-color: black;
+  -webkit-text-fill-color: black;
+     -moz-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
+     -moz-text-stroke-width: 2.5px;  
+  -webkit-text-stroke-width: 2.5px;
+}
+
+.bottom {
+  width: 90%;
+  margin: auto;
+}
+.bottomtext {
+
+  padding-top: 500px;
+  padding-bottom: 70px;
+  font-size: 90px;
+}
+
+.proveit {
+  width: 150px;
+  text-align: center;
+  font-family: freight-sans-condensed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 300px;
+  border: 3px solid black;
+  display: block;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+     background-color: black;
+}
+.proveit:hover {
+  border: 3px solid black;
+  color: white;
+  background-color: black;
+  transition: 0.4s ease;
+}

@@ -56,6 +56,134 @@ $(document).ready(function() {
   });
 });
 
+
+$(document).ready(function () {
+  $("#sidenav").show();
+
+  function showSideNavigation() {
+    var animalsY = $('#affirmation')
+
+    if($(window).scrollTop() > animalsY) {
+      $("#sidenav").show();
+    } else {
+      $("#sidenav").show();
+    }
+  }
+
+  var chapter = '';
+
+  $(window).scroll(function() {
+    showSideNavigation();
+
+    var scrollTop = $(window).scrollTop();
+    var hash = location.hash;
+
+    if (scrollTop >= $('#planahead').offset().top) {
+      chapter = 'planahead';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#travel').offset().top) {
+      chapter = 'travel';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#cooking').offset().top) {
+      chapter = 'cooking';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#notmeat').offset().top) {
+      chapter = 'notmeat';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#junkfood').offset().top) {
+      chapter = 'junkfood';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#groceries').offset().top) {
+      chapter = 'groceries';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#eatingout').offset().top) {
+      chapter = 'eatingout';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#cheese').offset().top) {
+      chapter = 'cheese';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#sharing').offset().top) {
+      chapter = 'sharing';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#veganpolice').offset().top) {
+      chapter = 'veganpolice';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#affirmation').offset().top) {
+      chapter = 'affirmation';
+      $('#sidenav a').css({ border: 'none'});
+    } else {
+      chapter = '';
+    }
+
+    $('#sidenav a[href="#' + chapter + '"]').css({ border: '3px solid black'});
+  });
+});
+
+
+$(document).ready(function () {
+  $("#sidenav").show();
+
+  function showSideNavigation() {
+    var animalsY = $('#animals')
+
+    if($(window).scrollTop() > animalsY) {
+      $("#sidenav").show();
+    } else {
+      $("#sidenav").show();
+    }
+  }
+
+  var chapter = '';
+
+  $(window).scroll(function() {
+    showSideNavigation();
+
+    var scrollTop = $(window).scrollTop();
+    var hash = location.hash;
+
+    if (scrollTop >= $('#vegansolution').offset().top) {
+      chapter = 'vegansolution';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health_diseaseprevention').offset().top) {
+      chapter = 'health_diseaseprevention';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health_protein').offset().top) {
+      chapter = 'health_protein';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health_dairy').offset().top) {
+      chapter = 'health_dairy';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health_chicken').offset().top) {
+      chapter = 'health_chicken';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health_fish').offset().top) {
+      chapter = 'health_fish';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health_meat').offset().top) {
+      chapter = 'health_meat';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#health_eggs').offset().top) {
+      chapter = 'health_eggs';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#humanhealth').offset().top) {
+      chapter = 'humanhealth';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#humanrights').offset().top) {
+      chapter = 'humanrights';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#environment').offset().top) {
+      chapter = 'environment';
+      $('#sidenav a').css({ border: 'none'});
+    } else if (scrollTop >= $('#animals').offset().top) {
+      chapter = 'animals';
+      $('#sidenav a').css({ border: 'none'});
+    } else {
+      chapter = '';
+    }
+
+    $('#sidenav a[href="#' + chapter + '"]').css({ border: '3px solid black'});
+  });
+});
 </script>
 
 </head>
