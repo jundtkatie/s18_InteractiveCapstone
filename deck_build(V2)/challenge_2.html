@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel='stylesheet'  href='css/navigation.css' type='text/css'>
+<script src="navigation.js"></script>
+
+<link rel='stylesheet'  href='css/challenge.css' type='text/css'>
+<link rel='stylesheet'  href='css/glitch.css' type='text/css'>
+
+<link rel="stylesheet" href="https://use.typekit.net/rhk7dsb.css">
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>   
+
+
+<title>Challenge!</title>
+
+<style type="text/css">
+
+#pb1_2 {
+  width: 55px;
+  height: 2px;
+  margin-bottom: 55px;
+}
+
+#pb1_7 {
+  margin-bottom: 70%;
+}
+
+#pb2_7 {
+  margin-bottom: 70%;
+}
+
+
+</style>
+
+</head>
+
+<body> 
+ <!--  <div class="topnav">
+  <a href="facts_advice.html" class="active">FACTS + ADVICE</a>
+  <a href="challenge.html">CHALLENGE</a>
+  <a href="index.html">HOME</a>
+</div>
+
+<section class="move-area">
+  <div class='container'>
+    <img class='eye' src="VectorImages/naveye.svg">
+  </div>
+</section> -->
+
+<!-- <div class="parent">
+	<div class="progress">
+		<div class="progress__number">1</div>
+	</div>
+	<div class="slides"> -->
+	
+
+<div class="progress">
+  <a href="challenge_1.html">
+    <div class="progress_bar" id="pb1_1"></div>
+  </a>
+<!--   <a href="challenge_2.html"> -->
+    <div class="progress_bar active" id="pb1_2"><div class="number">2</div></div>
+<!--   </a> -->
+  <a href="challenge_3.html">
+    <div class="progress_bar" id="pb1_3"></div>
+  </a>
+  <a href="challenge_4.html">
+    <div class="progress_bar" id="pb1_4"></div>
+  </a>  
+  <a href="challenge_5.html">
+    <div class="progress_bar" id="pb1_5"></div>
+  </a>
+  <a href="challenge_6.html">
+    <div class="progress_bar" id="pb1_6"></div>
+  </a>
+  <a href="challenge_7.html">
+    <div class="progress_bar" id="pb1_7"></div>
+  </a>
+  <a href="challenge_8.html">
+    <div class="progress_bar" id="pb2_1"></div>
+  </a>
+  <a href="challenge_9.html">
+    <div class="progress_bar" id="pb2_2"></div>
+  </a>
+  <a href="challenge_10.html">
+    <div class="progress_bar" id="pb2_3"></div>
+  </a>
+  <a href="challenge_11.html">
+    <div class="progress_bar" id="pb2_4"></div>
+  </a>
+  <a href="challenge_12.html">
+    <div class="progress_bar" id="pb2_5"></div>
+  </a>
+  <a href="challenge_13.html">
+    <div class="progress_bar" id="pb2_6"></div>
+  </a>
+  <a href="challenge_14.html">
+    <div class="progress_bar" id="pb2_7"></div>
+  </a>
+  <a href="challenge_15.html">
+    <div class="progress_bar" id="pb3_1"></div>
+  </a>
+  <a href="challenge_16.html">
+    <div class="progress_bar" id="pb3_2"></div>
+  </a>
+  <a href="challenge_17.html">
+    <div class="progress_bar" id="pb3_3"></div>
+  </a>
+  <a href="challenge_18.html">
+    <div class="progress_bar" id="pb3_4"></div>
+  </a>
+  <a href="challenge_19.html">
+    <div class="progress_bar" id="pb3_5"></div>
+  </a>
+  <a href="challenge_20.html">
+    <div class="progress_bar" id="pb3_6"></div>
+  </a>
+  <a href="challenge_21.html">
+    <div class="progress_bar" id="pb3_7"></div>
+  </a>
+</div>
+
+
+  <div id="scenario1" data-slide="1" class="slide show">
+	  <h2 class="example">Most of your friends and family eat meat at every meal, but telling them to accommodate you would seem selfish.</h2>
+	  <div class="wdywtd">WHAT DO YOU WANT TO DO?</div>
+
+	  <h3><a class="link choice1">
+		Trust that they love you and accept your choices
+	  </a></h3>
+	  <h3><a class="link choice2">
+		Do not tell them
+	  </a></h3>
+	  <!-- <a class="link quit" href="index.html" data-link="#scenario1_result3">
+		I can’t do this!
+	  </a> -->
+	</div>
+
+
+	  <div class="result1">Remember to take things at your own pace, and don’t be too hard on yourself if you slip up. This is about you making healthy, compassionate choices for yourself, animals, and the planet.</div>
+
+
+	  <div class="result2">There are people who take it upon themselves to point out instances of “failure” in vegans in their lives. It is very difficult for most people to attempt a vegan diet, and that challenge increases when they feel like the people around them are waiting for them to fail.</div>
+</div>
+
+<a href="challenge_3.html"><div class="continue">CONTINUE</div></a>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#navbox').click(function() {
+    $('.topnav').toggle();
+  });
+});
+
+$(document).ready(function() {
+          $( ".choice1" ).click(function() {
+              $('.result1').css({
+                  "display": "inline-block"
+              })
+              $('.continue').css({
+                  "display": "inline-block",
+                  "margin-left": "90vw",
+                  "margin-top": "20vh",
+              })
+              $('#scenario1').css({
+                  "display": "none"
+              })
+              $('.progress').css({
+                  "display": "none",
+              })
+          });
+
+          $( ".choice2" ).click(function() {
+              $('.result2').css({
+                  "display": "inline-block"
+              })
+              $('.continue').css({
+                  "display": "inline-block",
+                  "margin-left": "90vw",
+                  "margin-top": "20vh",
+              })
+              $('#scenario1').css({
+                  "display": "none"
+              })
+              $('.progress').css({
+                  "display": "none",
+              })
+          });
+});
+          
+
+</script>
+	   
+</body>
+</html>

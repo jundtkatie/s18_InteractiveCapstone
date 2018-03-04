@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>   
+
+<!-- <link rel='stylesheet'  href='css/navigation.css' type='text/css'>
+<script src="js/navigation.js"></script> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>test
+	</title>
+
+<style type="text/css">
+.move-area{/*normally use body*/
+  width: 100vw;
+  height: 100vh;
+  padding: 10% 45%;
+  z-index: 1000;
+}
+.container {
+  width: 45px;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+}
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid white;
+    padding-right: 40px;
+    padding-top: 0px;
+    bottom: 25px;
+    left: 100px;
+    display: none;
+    position: fixed;
+}
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 14px;
+    text-decoration: none;
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    /*border: 1px solid black;*/
+    margin: 10px 5px;
+}
+
+.topnav a:hover {
+    text-decoration-line: underline;
+    background-color: white;
+/*    border: 1px solid black;*/
+    color: black;
+}
+
+.topnav a:active {
+    background-color: tomato;
+    border: 1px solid black;
+    color: black;
+} 
+
+#navbox {
+    top: 25px;
+    right: 25px;
+    width: 85px;
+    height: 85px;
+    border-radius: 500px;
+    border: 0px solid ;
+    position: fixed;
+    display: inline-block;
+    z-index: 1000;
+}
+
+</style>
+
+
+</head>
+
+<body>
+  <div class="topnav">
+  <a href="facts_advice.html" class="active">FACTS + ADVICE</a>
+  <a href="challenge.html">CHALLENGE</a>
+  <a href="index.html">HOME</a>
+</div>
+
+<section class="move-area">
+  <div class='container'>
+    <img class='eye' src="VectorImages/naveye.svg">
+  </div>
+</section>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.container').click(function() {
+  $('.topnav').toggle( "slow");
+  });
+});
+
+$(".move-area").mousemove(function(event) {
+  var eye = $(".eye");
+  var x = (eye.offset().left) + (eye.width() / 2);
+  var y = (eye.offset().top) + (eye.height() / 2);
+  var rad = Math.atan2(event.pageX - x, event.pageY - y);
+  var rot = (rad * (180 / Math.PI) * -1) + 180;
+  eye.css({
+    '-webkit-transform': 'rotate(' + rot + 'deg)',
+    '-moz-transform': 'rotate(' + rot + 'deg)',
+    '-ms-transform': 'rotate(' + rot + 'deg)',
+    'transform': 'rotate(' + rot + 'deg)'
+  });
+});
+</script>
+</body>
+</html>

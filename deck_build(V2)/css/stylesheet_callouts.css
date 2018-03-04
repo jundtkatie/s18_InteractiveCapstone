@@ -1,0 +1,459 @@
+#stuffA {
+  width: 400px;
+  padding: 15px;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  z-index: 200;
+  background-color: black;
+  opacity: 0;
+  right: 100px;
+  }
+  .hoverA:hover + #stuffA {
+    opacity: 1;
+  }
+
+
+.stuffB {
+  width: 500px;
+  height: 500px;
+  display: none;
+  position: fixed;
+  left:0px;
+  top:0px;
+  z-index: 250;
+  opacity: 1;
+
+  }
+  .hoverB:hover + .stuffB {
+    display: inline-block;
+  }
+#cow1 {
+  top: 00;
+  left: 00;
+}
+#cow2 {
+  top: 100;
+  left: 50;
+}
+#cow3 {
+  top: 30;
+  left: 20;
+}
+#cow4 {
+  top: 30;
+  left: 20;
+}
+
+
+
+.stuffC {
+  width: 1000px;
+  height: 1000px;
+  display: none;
+  position: absolute;
+  left:23px;
+  opacity: 1;
+animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+/*  animation-play-state: paused; */
+  }
+  .hoverC:hover + .stuffC {
+    display: inline-block;
+/*    animation-play-state: running;
+*/  }
+
+/*  @keyframes hoverC {
+  100% {transform: rotate(1turn); }
+}*/
+
+.stuffD {
+  width: 1000px;
+  height: 1000px;
+  display: none;
+  position: fixed;
+  left:0px;
+  top:0px;
+  z-index: 250;
+  opacity: 1;
+
+  }
+  .hoverD:hover + .stuffD {
+    display: inline-block;
+  }
+#udder {
+  position: absolute;
+  top: 30;
+  left: 20;
+}
+
+.stuffE {
+  width: 250px;
+  height: 250px;
+  display: none;
+  position: fixed;
+  left:10px;
+/*  top:100px;*/
+  z-index: 250;
+  opacity: 1;
+  left: 300px;
+  }
+  .hoverE:hover + .stuffE {
+    display: inline-block;
+    position: absolute;
+
+/*    transition: 500ms ease-in-out;
+*/  }
+
+
+@keyframes move-in-steps {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+#feather1 {
+  position: absolute;
+  top: 30vh;
+  left: -20vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather2 {
+  position: absolute;
+  top: 31vh;
+  left: -25vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather3 {
+  position: absolute;
+  top: 32vh;
+  left: -24vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather4 {
+  position: absolute;
+  top: 33vh;
+  left: -22vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather5 {
+  position: absolute;
+  top: 34vh;
+  left: -19vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather6 {
+  position: absolute;
+  top: 35vh;
+  left: -15vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather7 {
+  position: absolute;
+  top: 37vh;
+  left: -4vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather8 {
+  position: absolute;
+  top: 39vh;
+  left: -7vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather9 {
+  position: absolute;
+  top: 42vh;
+  left: -9vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather10 {
+  position: absolute;
+  top: 45vh;
+  left: -2vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather11 {
+  position: absolute;
+  top: 48vh;
+  left: -10vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather12 {
+  position: absolute;
+  top: 10vh;
+  left: -14vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather13 {
+  position: absolute;
+  top: 12vh;
+  left: -1vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather14 {
+  position: absolute;
+  top: 17vh;
+  left: 3vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather15 {
+  position: absolute;
+  top: 19vh;
+  left: 6vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather16 {
+  position: absolute;
+  top: 21vh;
+  left: 10vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather17 {
+  position: absolute;
+  top: 23vh;
+  left: 2vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather18 {
+  position: absolute;
+  top: 25vh;
+  left: 7vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather19 {
+  position: absolute;
+  top: 27vh;
+  left: 5vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather20 {
+  position: absolute;
+  top: 23vh;
+  left: 15vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather21 {
+  position: absolute;
+  top: 25vh;
+  left: 21vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather22 {
+  position: absolute;
+  top: 27vh;
+  left: 22vw;
+  animation: move-in-steps 8s infinite;
+}
+#feather23 {
+  position: absolute;
+  top: 29vh;
+  left: 23vw;
+  animation: move-in-steps 8s infinite;
+}
+
+
+.callout {
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  z-index: 200;
+  background-color: black;
+  opacity: 1;
+  padding:20px;
+  height: auto;
+  display: none;
+  position: absolute;
+
+}
+
+.hover1:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover2:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover3:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+ .hover4:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover5:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover6:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover7:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover8:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover9:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+ .hover10:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover11:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover12:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover13:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover14:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover15:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover16:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover17:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover18:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover19:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover20:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover21:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover22:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover23:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover24:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover25:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover26:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover27:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover28:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover29:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover30:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover31:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover32:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover33:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover34:hover + .callout {
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+.hover35:hover + .callout {
+   display: inline-block;
+    transition: 500ms ease-in-out;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+.sectionheader {
+  padding-top: 20%;
+  margin-bottom: 20%;
+}
+
+.proveit {
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding: 1% 3%;
+  animation: glitch 3s steps(100) infinite;
+}
+.proveit:hover {
+  padding: 1% 3%;
+  background-color: black;
+  color: white;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+
+
+#sidenav {
+    overflow: hidden;
+    position:fixed;
+    z-index: 1;
+    width: 15%;
+    top:50px;
+    left: 50px;
+    display: inline-block;
+    padding: 60px 0;
+    float: left;
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    opacity: 1;
+}
+
+#sidenav a {
+    padding: 8px 10px 8px 10px;
+    margin-bottom: -3px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+
+}
+
+#sidenav a:hover {
+    border: 3px solid black !important;
+    background: white;
+}
+
+span {
+  display: inline-block;
+  position: relative;
+  font-family: georgia;
+  font-weight: 600;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+   -moz-text-fill-color: white;
+  -webkit-text-fill-color: white;
+     -moz-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
+     -moz-text-stroke-width: 1.5px;  
+  -webkit-text-stroke-width: 1.5px;
+}
+span:hover {
+  -moz-text-fill-color: black;
+  -webkit-text-fill-color: black;
+     -moz-text-stroke-color: black;
+  -webkit-text-stroke-color: black;
+     -moz-text-stroke-width: 2.5px;  
+  -webkit-text-stroke-width: 2.5px;
+}
+
+span sup {
+  font-size: .3em;
+  -moz-text-stroke-width: 1px;  
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: .05em;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom {
+  padding-top: 300px;
+  display: inline-block;
+  position: relative;
+}
