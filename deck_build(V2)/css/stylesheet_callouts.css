@@ -1,12 +1,10 @@
 #stuffA {
-  width: 400px;
-  padding: 15px;
-  font-family: freight-sans-compressed-pro, sans-serif;
-  font-style: normal;
+  padding: 35px;
+  font-family: georgia;
   font-weight: 600;
   font-size: 30px;
   color: white;
-  display: inline-block;
+  display: block;
   position: absolute;
   z-index: 200;
   background-color: black;
@@ -27,28 +25,24 @@
   top:0px;
   z-index: 250;
   opacity: 1;
-
   }
   .hoverB:hover + .stuffB {
     display: inline-block;
   }
-#cow1 {
-  top: 00;
-  left: 00;
-}
-#cow2 {
-  top: 100;
-  left: 50;
-}
-#cow3 {
-  top: 30;
-  left: 20;
-}
-#cow4 {
-  top: 30;
-  left: 20;
-}
 
+.stuffF {
+  width: 500px;
+  height: 500px;
+  display: none;
+  position: fixed;
+  left:0px;
+  top:0px;
+  z-index: 250;
+  opacity: 1;
+  }
+  .hoverF:hover + .stuffF {
+    display: inline-block;
+  }
 
 
 .stuffC {
@@ -259,201 +253,28 @@ animation: spin 10s linear infinite;
 
 
 .callout {
-  font-family: freight-sans-compressed-pro, sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
+  font-family: georgia;
   font-weight: 600;
   font-size: 30px;
   color: white;
   z-index: 200;
   background-color: black;
   opacity: 1;
-  padding:20px;
+  padding:35px;
+  line-height: 1.5em;
+  float: left;
+  margin-right: 200px;
+  margin-top: 70px;
   height: auto;
   display: none;
   position: absolute;
 
 }
 
-.hover1:hover + .callout {
-    display: inline-block;
+.hoverspan:hover + .callout {
+    display: block;
     transition: 500ms ease-in-out;
 }
-
-.hover2:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover3:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
- .hover4:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover5:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover6:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover7:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover8:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover9:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
- .hover10:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover11:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover12:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover13:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover14:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover15:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover16:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover17:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover18:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover19:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover20:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover21:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover22:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover23:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover24:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover25:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover26:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover27:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover28:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover29:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover30:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover31:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover32:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover33:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover34:hover + .callout {
-    display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-.hover35:hover + .callout {
-   display: inline-block;
-    transition: 500ms ease-in-out;
-}
-
-
-
-
-
 
 
 

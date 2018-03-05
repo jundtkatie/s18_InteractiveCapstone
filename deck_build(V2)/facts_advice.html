@@ -65,7 +65,7 @@ $(document).ready(function(){
   $(window).scroll(function() {
 	showSideNavigation();
 
-	var scrollTop = $(window).scrollTop();
+	var scrollTop = $(window).scrollTop()+ $(window).height();
 	var hash = location.hash;
 
 	if (scrollTop >= $('#planahead').offset().top) {
@@ -133,7 +133,7 @@ $(document).ready(function(){
   $(window).scroll(function() {
 	showSideNavigation();
 
-	var scrollTop = $(window).scrollTop()+ $(window).height();;
+	var scrollTop = $(window).scrollTop()+ $(window).height();
 	var hash = location.hash;
 
 	if (scrollTop >= $('#vegansolution').offset().top) {

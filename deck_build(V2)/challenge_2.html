@@ -21,12 +21,6 @@
 
 <style type="text/css">
 
-#pb1_2 {
-  width: 55px;
-  height: 2px;
-  margin-bottom: 55px;
-}
-
 #pb1_7 {
   margin-bottom: 70%;
 }
@@ -41,24 +35,6 @@
 </head>
 
 <body> 
- <!--  <div class="topnav">
-  <a href="facts_advice.html" class="active">FACTS + ADVICE</a>
-  <a href="challenge.html">CHALLENGE</a>
-  <a href="index.html">HOME</a>
-</div>
-
-<section class="move-area">
-  <div class='container'>
-    <img class='eye' src="VectorImages/naveye.svg">
-  </div>
-</section> -->
-
-<!-- <div class="parent">
-	<div class="progress">
-		<div class="progress__number">1</div>
-	</div>
-	<div class="slides"> -->
-	
 
 <div class="progress">
   <a href="challenge_1.html">
@@ -143,13 +119,16 @@
 	</div>
 
 
-	  <div class="result1">Remember to take things at your own pace, and don’t be too hard on yourself if you slip up. This is about you making healthy, compassionate choices for yourself, animals, and the planet.</div>
+	  <div class="result1">Remember to take things at your own pace, and don’t be too hard on yourself if you slip up. This is about you making healthy, compassionate choices for yourself, animals, and the planet.
+    </div>
 
 
-	  <div class="result2">There are people who take it upon themselves to point out instances of “failure” in vegans in their lives. It is very difficult for most people to attempt a vegan diet, and that challenge increases when they feel like the people around them are waiting for them to fail.</div>
-</div>
+	  <div class="result2">There are people who take it upon themselves to point out instances of “failure” in vegans in their lives. It is very difficult for most people to attempt a vegan diet, and that challenge increases when they feel like the people around them are waiting for them to fail.
+    </div>
 
-<a href="challenge_3.html"><div class="continue">CONTINUE</div></a>
+
+
+<a href="challenge_3.html"><div class="continue"><span>&#8594;</span></div></a>
 
 
 <script type="text/javascript">
@@ -160,42 +139,74 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-          $( ".choice1" ).click(function() {
-              $('.result1').css({
-                  "display": "inline-block"
-              })
-              $('.continue').css({
-                  "display": "inline-block",
-                  "margin-left": "90vw",
-                  "margin-top": "20vh",
-              })
-              $('#scenario1').css({
-                  "display": "none"
-              })
-              $('.progress').css({
-                  "display": "none",
-              })
-          });
+  $( ".choice1" ).click(function() {
+      $('.result1').css({
+          "display": "inline-block",
+          "opacity": "1",
+          "transition": "opacity 1.5s",
+          "transition-delay": "2s"
+      })
+      $('.continue').css({
+          "bottom": "40px",
+          "transition": "bottom 1s",
+          "transition-delay": "3s",
+      })
+      $('#scenario1').css({
+          "right": "100%",
+          "transition": "right 1s",
+          "animation": "glitch_v_mild 3s steps(100) infinite"
+      })
+      $('.number').css({
+          "opacity": "0",
+          "transition": "opacity 0.3s",
+      })
+      $('#pb1_2').css({
+          "width": "8px",
+          "transition": "width 1s",
+          "height": "2px",
+      })
+  });
 
-          $( ".choice2" ).click(function() {
-              $('.result2').css({
-                  "display": "inline-block"
-              })
-              $('.continue').css({
-                  "display": "inline-block",
-                  "margin-left": "90vw",
-                  "margin-top": "20vh",
-              })
-              $('#scenario1').css({
-                  "display": "none"
-              })
-              $('.progress').css({
-                  "display": "none",
-              })
-          });
+  $( ".choice2" ).click(function() {
+      $('.result2').css({
+          "display": "inline-block",
+          "opacity": "1",
+          "transition": "opacity 1.5s",
+          "transition-delay": "2s"
+      })
+      $('.continue').css({
+          "bottom": "40px",
+          "transition": "bottom 1s",
+          "transition-delay": "3s",
+      })
+      $('#scenario1').css({
+          "right": "100%",
+          "transition": "right 1s",
+          "animation": "glitch_v_mild 3s steps(100) infinite"
+      })
+      $('.number').css({
+          "opacity": "0",
+          "transition": "opacity 0.3s",
+      })
+      $('#pb1_2').css({
+          "width": "8px",
+          "transition": "width 1s",
+          "height": "2px",
+      })
+  });          
+});    
+
+
+$(document).ready(function() {
+    $('.number').css({
+        "opacity": "1",
+        "transition": "opacity 0.3s",
+    })
+    $('#pb1_2').css({
+        "width": "55px",
+        "transition": "width 1s",
+    })
 });
-          
-
 </script>
 	   
 </body>

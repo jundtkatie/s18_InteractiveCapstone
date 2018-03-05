@@ -20,11 +20,6 @@
 <title>Challenge!</title>
 
 <style type="text/css">
-#pb2_4 {
-  width: 55px;
-  height: 2px;
-  margin-bottom: 55px;
-}
 
 #pb1_7 {
   margin-bottom: 70%;
@@ -149,7 +144,7 @@
     </div>
 </div>
 
-<a href="challenge_12.html"><div class="continue">CONTINUE</div></a>
+<a href="challenge_12.html"><div class="continue"><span>&#8594;</span></div></a>
 
 
 <script type="text/javascript">
@@ -160,41 +155,74 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-          $( ".choice1" ).click(function() {
-              $('.result1').css({
-                  "display": "inline-block"
-              })
-              $('.continue').css({
-                  "display": "inline-block",
-                  "margin-left": "90vw",
-                  "margin-top": "20vh",
-              })
-              $('#scenario1').css({
-                  "display": "none"
-              })
-              $('.progress').css({
-                  "display": "none",
-              })
-          });
+  $( ".choice1" ).click(function() {
+      $('.result1').css({
+          "display": "inline-block",
+          "opacity": "1",
+          "transition": "opacity 1.5s",
+          "transition-delay": "2s"
+      })
+      $('.continue').css({
+          "bottom": "40px",
+          "transition": "bottom 1s",
+          "transition-delay": "3s",
+      })
+      $('#scenario1').css({
+          "right": "100%",
+          "transition": "right 1s",
+          "animation": "glitch_v_mild 3s steps(100) infinite"
+      })
+      $('.number').css({
+          "opacity": "0",
+          "transition": "opacity 0.3s",
+      })
+      $('#pb2_4').css({
+          "width": "8px",
+          "transition": "width 1s",
+          "height": "2px",
+      })
+  });
 
-          $( ".choice2" ).click(function() {
-              $('.result2').css({
-                  "display": "inline-block"
-              })
-              $('.continue').css({
-                  "display": "inline-block",
-                  "margin-left": "90vw",
-                  "margin-top": "20vh",
-              })
-              $('#scenario1').css({
-                  "display": "none"
-              })
-              $('.progress').css({
-                  "display": "none",
-              })
-          });
-});
-          
+  $( ".choice2" ).click(function() {
+      $('.result2').css({
+          "display": "inline-block",
+          "opacity": "1",
+          "transition": "opacity 1.5s",
+          "transition-delay": "2s"
+      })
+      $('.continue').css({
+          "bottom": "40px",
+          "transition": "bottom 1s",
+          "transition-delay": "3s",
+      })
+      $('#scenario1').css({
+          "right": "100%",
+          "transition": "right 1s",
+          "animation": "glitch_v_mild 3s steps(100) infinite"
+      })
+      $('.number').css({
+          "opacity": "0",
+          "transition": "opacity 0.3s",
+      })
+      $('#pb2_4').css({
+          "width": "8px",
+          "transition": "width 1s",
+          "height": "2px",
+      })
+  });          
+});    
+
+
+$(document).ready(function() {
+    $('.number').css({
+        "opacity": "1",
+        "transition": "opacity 0.3s",
+    })
+    $('#pb2_4').css({
+        "width": "55px",
+        "transition": "width 1s",
+    })
+});       
 
 </script>
 	   
