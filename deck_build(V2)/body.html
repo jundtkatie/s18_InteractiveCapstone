@@ -5,14 +5,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel='stylesheet'  href='css/nav_temporary.css' type='text/css'>
 
 <link rel='stylesheet'  href='css/glitch.css' type='text/css'>
 <link rel='stylesheet'  href='css/mainbody.css' type='text/css'>
 <link rel='stylesheet'  href='css/stylesheet.css' type='text/css'>
 <link rel='stylesheet'  href='css/stylesheet_callouts.css' type='text/css'>
 
-<!-- <link rel='stylesheet'  href='css/navigation.css' type='text/css'>
-<script src="js/navigation.js"></script> -->
+
 
 <link rel="stylesheet" href="https://use.typekit.net/rhk7dsb.css">
 
@@ -30,6 +30,26 @@
 </style>
 
 <script type="text/javascript">
+$(document).ready(function() {
+  $('.container').click(function() {
+  $('.topnav').toggle( "slow");
+  });
+});
+
+$(".move-area").mousemove(function(event) {
+  var eye = $(".eye");
+  var x = (eye.offset().left) + (eye.width() / 2);
+  var y = (eye.offset().top) + (eye.height() / 2);
+  var rad = Math.atan2(event.pageX - x, event.pageY - y);
+  var rot = (rad * (180 / Math.PI) * -1) + 180;
+  eye.css({
+    '-webkit-transform': 'rotate(' + rot + 'deg)',
+    '-moz-transform': 'rotate(' + rot + 'deg)',
+    '-ms-transform': 'rotate(' + rot + 'deg)',
+    'transform': 'rotate(' + rot + 'deg)'
+  });
+});
+
 // SIDENAVIGATION
 $(document).ready(function () {
   $("#sidenav").hide();
@@ -85,19 +105,11 @@ $(document).ready(function () {
 </script>
 </head>
 <body>
-<!--  <div class="topnav">
-  <a href="facts_advice.html" class="active">FACTS + ADVICE</a>
-  <a href="challenge.html">CHALLENGE</a>
-  <a href="index.html">HOME</a>
-</div>
-
-<section class="move-area">
-  <div class='container'>
-    <img class='eye' src="VectorImages/naveye.svg">
-  </div>
-</section>
- -->
-
+<ul>
+  <li class="tempnav"><a class="active" href="index.html">Home</a></li>
+  <li class="tempnav"><a href="challenge_1.html">Challenge</a></li>
+  <li class="tempnav"><a href="facts_advice.html">Facts + Advice</a></li>
+</ul>
 
 <div class="sectionheader">
   <h1>WHAT DOES IT MEAN TO BE VEGAN?</h1>
@@ -134,7 +146,7 @@ $(document).ready(function () {
           <img id="cow4" src="VectorImages/Cow4.svg" alt="Cow standing line art">
 
 
-          <audio id="shutdown_engaged" preload="auto">
+          <audio id="shutdown_engaged" >
           <source src="SoundBites/cows.mp3"></source>
           This browser does not support the HTML5 audio tag.
           </audio>  
@@ -175,32 +187,31 @@ $(document).ready(function () {
 
     <span class="hoverF">western diet</span>
 
-    <div class="stuffB">
-          <img id="cow1" src="VectorImages/meat1.svg">
-          <img id="cow2" src="VectorImages/meat2.svg" alt="Cow standing line art">
-          <img id="cow3" src="VectorImages/meat3.svg" alt="Cow standing line art">
-          <img id="cow4" src="VectorImages/meat4.svg" alt="Cow standing line art">
-          <img id="cow1" src="VectorImages/meat5.svg" alt="Cow standing line art">
-          <img id="cow2" src="VectorImages/meat6.svg" alt="Cow standing line art">
-          <img id="cow3" src="VectorImages/meat7.svg" alt="Cow standing line art">
-          <img id="cow4" src="VectorImages/meat8.svg" alt="Cow standing line art">
-          <img id="cow3" src="VectorImages/meat9.svg" alt="Cow standing line art">
-          <img id="cow4" src="VectorImages/meat10.svg" alt="Cow standing line art">
-          <img id="cow1" src="VectorImages/meat11.svg" alt="Cow standing line art">
-          <img id="cow2" src="VectorImages/meat12.svg" alt="Cow standing line art">
-          <img id="cow3" src="VectorImages/meat13.svg" alt="Cow standing line art">
-          <img id="cow4" src="VectorImages/meat14.svg" alt="Cow standing line art">
+    <div class="stuffF">
+          <img id="meat1" src="VectorImages/meat1.svg">
+          <img id="meat2" src="VectorImages/meat2.svg">
+          <img id="meat3" src="VectorImages/meat3.svg">
+          <img id="meat4" src="VectorImages/meat4.svg">
+          <img id="meat5" src="VectorImages/meat5.svg">
+          <img id="meat6" src="VectorImages/meat6.svg">
+          <img id="meat7" src="VectorImages/meat7.svg">
+          <img id="meat8" src="VectorImages/meat8.svg">
+          <img id="meat9" src="VectorImages/meat9.svg">
+          <img id="meat10" src="VectorImages/meat10.svg">
+          <img id="meat11" src="VectorImages/meat11.svg">
+          <img id="meat12" src="VectorImages/meat12.svg">
+          <img id="meat13" src="VectorImages/meat13.svg">
+          <img id="meat14" src="VectorImages/meat14.svg">
 
 
-          <audio id="pigscream_engaged" preload="auto">
-          <source src="SoundBites/aggressivepigscream.mp3"></source>
+          <audio id="pigscream" preload="auto">
+          <source src="SoundBites/pigscream.mp3"></source>
           This browser does not support the HTML5 audio tag.
           </audio>  
           <script>
-          var pigscreamEngaged = $("#pigscream_engaged")[0];
-          $("#pigscream")
-          .mouseenter(function() {
-          pigscreamEngaged.play();
+          var scream = $("#pigscream")[0];
+          $(".hoverF").mouseenter(function() {
+            scream.play();
           });
           </script>
 
@@ -317,9 +328,20 @@ $(document).ready(function () {
 
     <br>The production of <span class="hoverD">dairy</span> 
 
-<!--       <div class="stuffD">
-         <img src="VectorImages/cow/udder.svg" alt="udder" id="udder">
-        </div> -->
+      <div class="stuffD">
+         <img src="VectorImages/cleaver.svg">
+        </div>
+
+      <audio id="shot_engaged" preload="auto">
+          <source src="SoundBites/shot.mp3"></source>
+          This browser does not support the HTML5 audio tag.
+          </audio>  
+          <script>
+          var gunshot = $("#shot_engaged")[0];
+          $(".hoverD").mouseenter(function() {
+            gunshot.play();
+          });
+          </script>
 
     products necessitates the death of countless male calves that are of no use to the dairy farmer, as well as the premature death of cows slaughtered when their milk production decreases. <br>
 
@@ -341,6 +363,17 @@ $(document).ready(function () {
           <img src="VectorImages/feather4.svg" id="feather4">
           <img src="VectorImages/feather5.svg" id="feather5">
         </div>
+
+        <audio id="mySoundClip" preload="auto">
+          <source src="SoundBites/chickens.mp3"></source>
+          This browser does not support the HTML5 audio tag.
+          </audio>  
+          <script>
+          var chicken = $("#mySoundClip")[0];
+          $(".hoverE").mouseenter(function() {
+            chicken.play();
+          });
+          </script>
 
     and that they have experienced no pain or fear at the slaughterhouse. Yet the sad truth is that all living creatures (even those labelled ‘free range’ or ‘organic’)<span class="hoverspan"><sup>35</sup></span> 
 

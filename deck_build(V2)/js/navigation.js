@@ -1,10 +1,10 @@
 $(document).ready(function() {
-  $('.eye').click(function() {
-  $('.topnav').toggle();
+  $('.container').click(function() {
+  $('.topnav').toggle("slow");
   });
 });
 
-$("body").mousemove(function(event) {
+$(".move-area").mousemove(function(event) {
   var eye = $(".eye");
   var x = (eye.offset().left) + (eye.width() / 2);
   var y = (eye.offset().top) + (eye.height() / 2);

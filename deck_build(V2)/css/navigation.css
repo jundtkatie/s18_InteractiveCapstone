@@ -1,7 +1,7 @@
 .move-area{/*normally use body*/
   width: 100vw;
   height: 100vh;
-  padding: 10% 45%;
+/*  padding: 10% 45%;*/
   z-index: 1000;
 }
 .container {
@@ -11,7 +11,7 @@
   left: 25px;
 }
 .eye {
-  position: relative;
+  position: fixed;
   display: inline-block;
   border-radius: 50%;
   height: 45px;
@@ -19,13 +19,15 @@
 }
 
 .topnav {
-    background-color: white;
+/*    background-color: white;*/
     overflow: hidden;
     border: 1px solid white;
     padding-right: 40px;
     padding-top: 0px;
     bottom: 25px;
     left: 100px;
+    width: 50px;
+    height: 50px;
     display: none;
     position: fixed;
 }
@@ -46,13 +48,13 @@
 
 .topnav a:hover {
     text-decoration-line: underline;
-    background-color: white;
+/*    background-color: white;*/
 /*    border: 1px solid black;*/
     color: black;
 }
 
 .topnav a:active {
-    background-color: tomato;
+    background-color: white;
     border: 1px solid black;
     color: black;
 } 

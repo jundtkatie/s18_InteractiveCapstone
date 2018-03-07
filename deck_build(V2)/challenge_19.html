@@ -3,8 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel='stylesheet'  href='css/navigation.css' type='text/css'>
-<script src="navigation.js"></script>
+<link rel='stylesheet'  href='css/nav_temporary.css' type='text/css'>
+
 
 <link rel='stylesheet'  href='css/challenge.css' type='text/css'>
 <link rel='stylesheet'  href='css/glitch.css' type='text/css'>
@@ -33,24 +33,11 @@
 </head>
 
 <body> 
- <!--  <div class="topnav">
-  <a href="facts_advice.html" class="active">FACTS + ADVICE</a>
-  <a href="challenge.html">CHALLENGE</a>
-  <a href="index.html">HOME</a>
-</div>
-
-<section class="move-area">
-  <div class='container'>
-    <img class='eye' src="VectorImages/naveye.svg">
-  </div>
-</section> -->
-
-<!-- <div class="parent">
-	<div class="progress">
-		<div class="progress__number">1</div>
-	</div>
-	<div class="slides"> -->
-	
+ <ul>
+  <li class="tempnav"><a href="index.html">Home</a></li>
+  <li class="tempnav"><a class="active" href="challenge_1.html">Challenge</a></li>
+  <li class="tempnav"><a href="facts_advice.html">Facts + Advice</a></li>
+</ul>
 
 <div class="progress">
   <a href="challenge_1.html">
@@ -167,9 +154,10 @@ $(document).ready(function() {
           "transition-delay": "3s",
       })
       $('#scenario1').css({
-          "right": "100%",
-          "transition": "right 1s",
-          "animation": "glitch_v_mild 3s steps(100) infinite"
+          // "right": "100%",
+          // "transition": "right 1s",
+          // "animation": "glitch_v_mild 3s steps(100) infinite"
+          "opacity": "0",
       })
       $('.number').css({
           "opacity": "0",
@@ -195,9 +183,10 @@ $(document).ready(function() {
           "transition-delay": "3s",
       })
       $('#scenario1').css({
-          "right": "100%",
-          "transition": "right 1s",
-          "animation": "glitch_v_mild 3s steps(100) infinite"
+          // "right": "100%",
+          // "transition": "right 1s",
+          // "animation": "glitch_v_mild 3s steps(100) infinite"
+          "opacity": "0",
       })
       $('.number').css({
           "opacity": "0",

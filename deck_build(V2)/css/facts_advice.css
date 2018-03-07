@@ -94,36 +94,44 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.titlebox {
+width: 200px;
+margin-top: 20px; 
+margin-left: 50px;
+ position: fixed;
+ height: 200px;
+ float: left;
+ height: 200px;
+
+}
+
 #title1 {
   font-family: freight-sans-compressed-pro, sans-serif;
   text-decoration: none; 
-  position: fixed;
+  position: sticky;
+  top: 70px;
+  width: 300px;
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
-    background-color: white;
     margin: auto; 
     color: black;
     margin-left: 50px;
-    float: left;
-    width: 15%;
-    padding-top: 20px; 
     animation: glitch_mild 0s steps(100) infinite;
 }
 #title2 {
   font-family: freight-sans-compressed-pro, sans-serif;
   text-decoration: none; 
-  position: fixed;
+  position: sticky;
+  top: 70px;
+  width: 300px;
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
     margin: auto; 
-    background-color: white;
     color: black;
     margin-left: 50px;
-    float: left;
-    width: 15%;
-    padding-top: 20px; 
     animation: glitch_mild 0s steps(100) infinite;
 }
 h1:hover {
@@ -135,7 +143,7 @@ h1:hover {
     position:fixed;
     z-index: 1;
     width: 15%;
-    top: 110px;
+    top: 150px;
     left: 50px;
     display: inline-block;
     padding: 60px 0px;
@@ -178,7 +186,7 @@ h1:hover {
     position:fixed;
     z-index: 1;
     width: 15%;
-    top: 110px;
+    top: 150px;
     left: 50px;
     display: inline-block;
     padding: 60px 0px;
@@ -216,7 +224,7 @@ h1:hover {
 .fact_section {
   font-family: freight-sans-condensed-pro, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 650;
   margin: auto;
 /*  padding-left: 550px;
   padding-right: 150px;*/
@@ -232,7 +240,7 @@ h1:hover {
 }
 
 .fact:hover {
-    animation: glitch_mild 3s steps(100) infinite;
+    animation: glitch_most_mild .2s steps(100);
 }
 
 .fact_section > div {
@@ -260,6 +268,7 @@ h1:hover {
 .factsource {
     margin: 5%;
     font-size: .4em;
+    font-weight: 500px;
     text-align: right;
     text-decoration: none;
     margin-left: 200px;

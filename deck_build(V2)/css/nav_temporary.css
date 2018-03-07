@@ -1,0 +1,38 @@
+ul {
+    list-style-type: none;
+    margin: auto 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.tempnav {
+    float: left;
+    animation: none;
+    text-transform: uppercase;
+}
+
+.tempnav a {
+    display: block;
+    color: black;
+    font-size: 12px;
+    font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    border: 2px solid black;
+    padding: 12px 14px;
+}
+
+li a.active {
+    color: white;
+    background-color: black;
+}
