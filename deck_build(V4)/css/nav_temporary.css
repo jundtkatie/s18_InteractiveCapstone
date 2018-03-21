@@ -1,0 +1,66 @@
+.navigationsquare {
+  width: 65px;
+  height: 65px;
+  background-color: black;
+  top: 25px;
+  right: -33px;
+  position: fixed;
+  transform: rotate(45deg);
+  box-shadow: 3px 3px 5px black;
+}
+
+.overlay {
+    text-transform: uppercase;
+    height: 50%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    text-decoration: none;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 35px;
+    text-align: left;
+    margin-right: 45px;
+    margin-top: 50px;
+    z-index: 20;
+}
+
+
+.overlay a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+    text-align: right;
+    padding: 14px 16px;
+}
+
+.overlay a:hover, .tempnav a:focus {
+    color: black;
+text-decoration: underline;
+}
+
+
+
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 30px;
+    border: 1px solid white !important;
+}
+
+.closebtn a:hover {
+    border: 1px solid white !important;
+}
+

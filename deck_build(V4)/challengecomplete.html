@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+<link rel="stylesheet" href="https://use.typekit.net/rhk7dsb.css">
+<link rel='stylesheet'  href='css/glitch.css' type='text/css'>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>  -->  
+
+<style type="text/css">
+html,body {
+  cursor: crosshair;
+  overflow: hidden;
+  padding-right: 5%;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  color: white;
+
+}
+
+.slide {
+	font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+	width: 100%;
+	height: 100%;
+    font-size: 60px;
+    margin-top: 100px;
+    position: relative;
+    top: 15vh;
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.animate {
+  padding: 10px 18px;
+  background-color: black;
+  margin:auto;
+  color: white;
+  width: 508px;
+  opacity: 0;
+  animation-delay: 2s;
+}
+.animate:hover {
+  padding: 10px 18px;
+  border:3px solid black;
+  background-color: white;
+  color: black;
+}
+
+</style>
+
+<script type="text/javascript">
+  
+	$(document).ready(function(){
+
+        $(".slide").css({
+        	"color": "black",
+        	"transition": "2s ease-in-out"
+        });
+
+        $(".animate").css({
+          "opacity": "1",
+        "transition": "opacity 4s ease"
+        });
+
+        $("a").css({
+        	"color": "white",
+        	"transition": "2s ease-in-out"
+        });
+        
+    });
+
+
+
+</script>
+
+<title>ERROR:/</title>
+
+</head>
+<body>
+<div class="topnav">
+ <a href="index.html" id="home">HOME</a>
+ <a href="facts.html" id="facts">FACTS</a>
+  <!-- <a href="challenge_1.html" id="challenge">CHALLENGE</a>
+    <a href="advice.html" id="advice">ADVICE</a> -->
+</div>
+
+<div class="slide">
+      <div>Each day, a person who eats a vegan diet saves 1,100 gallons of water, 45 pounds of grain, 30 square feet of land, 20llbs of CO2 equivalent, and one animal's life.</div><br><br><a  href="facts_advice.html"><div class="animate">Will you keep up the diet?</div></a>
+
+    </div>

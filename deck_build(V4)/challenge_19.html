@@ -1,0 +1,238 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel='stylesheet'  href='css/nav_right.css' type='text/css'>
+
+<link rel='stylesheet'  href='css/challenge.css' type='text/css'>
+<link rel='stylesheet'  href='css/glitch.css' type='text/css'>
+
+<link rel="stylesheet" href="https://use.typekit.net/rhk7dsb.css">
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>  -->  
+
+
+<title>ERROR:19</title>
+
+<style type="text/css">
+#pb1_7 {
+  margin-bottom: 70%;
+}
+
+#pb2_7 {
+  margin-bottom: 70%;
+}
+
+</style>
+
+</head>
+
+<body> 
+<div class="topnav">
+ <a href="index.html" id="home">HOME</a>
+ <a href="facts.html" id="facts">FACTS</a>
+  <!-- <a href="challenge_1.html" id="challenge">CHALLENGE</a>
+    <a href="advice.html" id="advice">ADVICE</a> -->
+</div>
+
+<div class="progress">
+  <a href="challenge_1.html">
+    <div class="progress_bar" id="pb1_1"></div>
+  </a>
+  <a href="challenge_2.html">
+    <div class="progress_bar" id="pb1_2"></div>
+  </a>
+  <a href="challenge_3.html">
+    <div class="progress_bar" id="pb1_3"></div>
+  </a>
+  <a href="challenge_4.html">
+    <div class="progress_bar active" id="pb1_4"></div>
+  </a>  
+  <a href="challenge_5.html">
+    <div class="progress_bar" id="pb1_5"></div>
+  </a>
+  <a href="challenge_6.html">
+    <div class="progress_bar" id="pb1_6"></div>
+  </a>
+  <a href="challenge_7.html">
+    <div class="progress_bar" id="pb1_7"></div>
+  </a>
+  <a href="challenge_8.html">
+    <div class="progress_bar" id="pb2_1"></div>
+  </a>
+  <a href="challenge_9.html">
+    <div class="progress_bar" id="pb2_2"></div>
+  </a>
+  <a href="challenge_10.html">
+    <div class="progress_bar" id="pb2_3"></div>
+  </a>
+  <a href="challenge_11.html">
+    <div class="progress_bar" id="pb2_4"></div>
+  </a>
+  <a href="challenge_12.html">
+    <div class="progress_bar" id="pb2_5"></div>
+  </a>
+  <a href="challenge_13.html">
+    <div class="progress_bar" id="pb2_6"></div>
+  </a>
+  <a href="challenge_14.html">
+    <div class="progress_bar" id="pb2_7"></div>
+  </a>
+  <a href="challenge_15.html">
+    <div class="progress_bar" id="pb3_1"></div>
+  </a>
+  <a href="challenge_16.html">
+    <div class="progress_bar" id="pb3_2"></div>
+  </a>
+  <a href="challenge_17.html">
+    <div class="progress_bar" id="pb3_3"></div>
+  </a>
+  <a href="challenge_18.html">
+    <div class="progress_bar" id="pb3_4"></div>
+  </a>
+<!--   <a href="challenge_19.html"> -->
+    <div class="progress_bar" id="pb3_5"><div class="number">19</div></div>
+<!--   </a> -->
+  <a href="challenge_20.html">
+    <div class="progress_bar" id="pb3_6"></div>
+  </a>
+  <a href="challenge_21.html">
+    <div class="progress_bar" id="pb3_7"></div>
+  </a>
+</div>
+
+
+  <div id="scenario1" data-slide="1" class="slide show">
+	  <h2 class="example">You find that you are constantly on the go, so it’s hard to find time to meal prep the way you feel a vegan would need to.</h2>
+	  <div class="wdywtd">WHAT DO YOU CHOOSE TO DO?</div>
+
+	  <h3><a class="link choice1">
+		Pre packed foods are gross
+	  </a></h3>
+	  <h3><a class="link choice2">
+		Plan ahead whenever possible
+	  </a></h3>
+	  <!-- <a class="link quit" href="index.html" data-link="#scenario1_result3">
+		I can’t do this!
+	  </a> -->
+	</div>
+
+
+	  <div class="result1">Packing your own food for lunches is a great way to ensure that you will always have food available. Simple snacks like veggie sticks with hummus, dried fruit, trail mix, bars, nuts, and fresh fruit are convenient to grab if you are in a hurry, and in combination they create a very satisfying meal.<br><br>Try to keep protein bars or vegan snacks – even if it’s just a bag of nuts or pretzels – in your backpack for when you get hungry on the go. <br>But if you are really in a pickle, 7 Eleven and Taco Bell are crowd favorites among vegans.
+    </div>
+
+
+	  <div class="result2">No matter how organized you are, there will be times when you find yourself in a not-so-vegan predicament. Try to keep your favorite vegan snacks around (in your purse, backpack, locker, car, etc.) for these dire instances, they will help tide you over until you can eat a proper meal.<br><br>If you worry about not having the time or brain power to come up with a meal from scratch during the week, try preparing a large portion of beans and rice. You can eat this with other dishes that you do have time to prepare throughout the week.
+    </div>
+</div>
+
+<a href="javascript:delay('challenge_20.html')"><div class="continue"><span>&#8594;</span></div></a>
+
+<script type="text/javascript">
+
+function delay (URL) {
+    setTimeout( function() { window.location = URL }, 1500 );
+}
+
+function openNav() {
+    document.getElementById("myNav").style.width = "18%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+$(document).ready(function() {
+  $( ".choice1" ).click(function() {
+      $('.result1').css({
+          "display": "inline-block",
+          "opacity": "1",
+          "transition": "opacity 1.5s",
+          "transition-delay": "2s"
+      })
+      $('.continue').css({
+          "bottom": "40px",
+          "transition": "bottom 1s",
+          "transition-delay": "3s",
+      })
+      $('#scenario1').css({
+          // "right": "100%",
+          // "transition": "right 1s",
+          // "animation": "glitch_v_mild 3s steps(100) infinite"
+          "opacity": "0",
+      })
+      $('.number').css({
+          "opacity": "0",
+          "transition": "opacity 0.3s",
+      })
+      $('#pb3_5').css({
+          "width": "20px",
+          "transition": "width 1s",
+          "height": "20px",
+      })
+  });
+
+  $( ".choice2" ).click(function() {
+      $('.result2').css({
+          "display": "inline-block",
+          "opacity": "1",
+          "transition": "opacity 1.5s",
+          "transition-delay": "2s"
+      })
+      $('.continue').css({
+          "bottom": "40px",
+          "transition": "bottom 1s",
+          "transition-delay": "3s",
+      })
+      $('#scenario1').css({
+          // "right": "100%",
+          // "transition": "right 1s",
+          // "animation": "glitch_v_mild 3s steps(100) infinite"
+          "opacity": "0",
+      })
+      $('.number').css({
+          "opacity": "0",
+          "transition": "opacity 0.3s",
+      })
+      $('#pb3_5').css({
+          "width": "20px",
+          "transition": "width 1s",
+          "height": "20px",
+      })
+  });
+    $( ".continue" ).click(function() {
+      $('.result2').css({
+          "opacity": "0",
+          "transition": "opacity 1s",
+      })
+      $('.result1').css({
+          "opacity": "0",
+          "transition": "opacity 1s",
+      })
+      $('.continue').css({
+          "bottom": "-40px",
+          "transition": "bottom 1s",
+      })
+  });          
+});    
+
+
+$(document).ready(function() {
+    $('.number').css({
+        "opacity": "1",
+        "transition": "opacity 0.3s",
+    })
+    $('#pb3_5').css({
+        "width": "55px",
+        "transition": "width 1s",
+    })
+});
+</script>
+	   
+</body>
+</html>
