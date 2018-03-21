@@ -1,0 +1,123 @@
+/*ul {
+    list-style-type: none;
+    margin: auto 0;
+    padding-right: 50px;
+    padding-top: 10px;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}*/
+
+/*.tempnav {
+    float: right;
+    animation: none;
+    text-transform: uppercase;
+}*/
+
+/*.tempnav a {
+    display: block;
+    color: black;
+    font-size: 12px;
+    font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    border: 2px solid black;
+    padding: 12px 14px;
+}
+
+li a.active {
+    color: white;
+    background-color: black;
+}*/
+.navigationsquare {
+  width: 65px;
+  height: 65px;
+  background-color: black;
+  top: 25px;
+  right: -33px;
+  position: fixed;
+  transform: rotate(45deg);
+}
+
+.overlay {
+    text-transform: uppercase;
+    height: 50%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    text-decoration: none;
+    right: 0;
+/*    background-color: black;*/
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 35px;
+/*    right: 45px;*/
+    text-align: left;
+    margin-right: 45px;
+    margin-top: 50px;
+    z-index: 20;
+}
+
+
+.overlay a {
+    /*padding: 8px;*/
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+    text-align: right;
+    padding: 14px 16px;
+/*    background-color: white;*/
+}
+
+.overlay a:hover, .tempnav a:focus {
+    color: black;
+/*    border: 3px solid black;*/
+/*    padding: 12px 14px;*/
+text-decoration: underline;
+}
+
+
+/*.overlay a:active {
+    color: white;
+    background-color: black;
+}*/
+
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 30px;
+    border: 1px solid white !important;
+}
+
+.closebtn a:hover {
+    border: 1px solid white !important;
+}
+
+/*@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}*/

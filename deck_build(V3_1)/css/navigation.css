@@ -1,0 +1,72 @@
+.move-area{/*normally use body*/
+  width: 100vw;
+  height: 100vh;
+/*  padding: 10% 45%;*/
+  z-index: 1000;
+}
+.container {
+  width: 45px;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+}
+.eye {
+  position: fixed;
+  display: inline-block;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+.topnav {
+/*    background-color: white;*/
+    overflow: hidden;
+    border: 1px solid white;
+    padding-right: 40px;
+    padding-top: 0px;
+    bottom: 25px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+}
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 14px;
+    text-decoration: none;
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    /*border: 1px solid black;*/
+    margin: 10px 5px;
+}
+
+.topnav a:hover {
+    text-decoration-line: underline;
+/*    background-color: white;*/
+/*    border: 1px solid black;*/
+    color: black;
+}
+
+.topnav a:active {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+} 
+
+#navbox {
+    top: 25px;
+    right: 25px;
+    width: 85px;
+    height: 85px;
+    border-radius: 500px;
+    border: 0px solid ;
+    position: fixed;
+    display: inline-block;
+    z-index: 1000;
+}
