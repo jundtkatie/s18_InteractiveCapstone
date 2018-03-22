@@ -29,6 +29,10 @@
   margin-bottom: 70%;
 }
 
+span a:hover {
+  text-decoration: underline !important;
+}
+
 </style>
 
 </head>
@@ -126,15 +130,16 @@
 	</div>
 
 
-	  <div class="result1">Great sources of protein:<br>1 cup of cooked lentils (18g)<br>1 cup of cooked black beans (15g)<br>1 veggie burger patty (13g)<br>4 oz of firm tofu (11g)<br>1 medium bagel (9g)<br>1 cup of cooked pasta (8g)<br>1 cup of cooked quinoa (8g)<br>2 Tbsp of peanut butter (8g)<br>1 cup of plain soy milk (7g)<br>6 oz of plain soy yogurt (6g)<br>2 slices of whole wheat bread (5g)<br>1 medium potato (4g)
+	  <div class="result1">Great sources of protein:<span style="font-size:.5em; line-height: .5em;"><br>1 cup of cooked lentils (18g)<br>1 cup of cooked black beans (15g)<br>1 veggie burger patty (13g)<br>4 oz of firm tofu (11g)<br>1 medium bagel (9g)<br>1 cup of cooked pasta (8g)<br>1 cup of cooked quinoa (8g)<br>2 Tbsp of peanut butter (8g)<br>1 cup of plain soy milk (7g)<br>6 oz of plain soy yogurt (6g)<br>2 slices of whole wheat bread (5g)<br>1 medium potato (4g)</span>
     </div>
 
 
-	  <div class="result2">Many long-time vegans live healthy lives with plenty of protein by finding it in the foods that they already love. Quinoa, peanut butter, nuts, beans, avocados, tofu, soy, tempeh and green vegetables are all great sources of protein.<br><br>Plant-based Athlete Case Studies<br><a href="https://www.gq.com/story/vegan-diet-of-nfl-player-david-carter">David Carter: former NFL defensive lineman</a>
-           <br><a href="http://www.greatveganathletes.com/tim-shieff-vegan-freerunner">Timothy Shieff: world champion freerunner, ninja warrior</a>
-           <br><a href="https://www.facebook.com/Mu-the-ageless-drug-free-athlete-Plant-strongvegan-826194394120198/">Mu Jin Han: ageless drug free athlete</a>
-           <br><a href="https://www.riseofthevegan.com/blog/vegan-tia-blanco-surfing-world-champion">Tia Blanco: professional surfer, ISA world surf champion (x2)</a>
-           <br><a href="https://www.outsideonline.com/1905351/plant-based-ultraman">Rich Roll: ultra-endurance athlete and author of Finding Ultra & Plantpower Way</a>
+	  <div class="result2">Many long-time vegans live healthy lives with plenty of protein by finding it in the foods that they already love. Quinoa, peanut butter, nuts, beans, avocados, tofu, soy, tempeh and green vegetables are all great sources of protein.<br><br>Plant-based Athlete Case Studies<br><span style="font-size:.5em; line-height: .5em; color: white; text-decoration: none;">
+          <a style="color: white; text-decoration: none;" href="https://www.gq.com/story/vegan-diet-of-nfl-player-david-carter">David Carter: former NFL defensive lineman</a>
+           <br><a style="color: white; text-decoration: none;" href="http://www.greatveganathletes.com/tim-shieff-vegan-freerunner">Timothy Shieff: world champion freerunner, ninja warrior</a>
+           <br><a style="color: white; text-decoration: none;" href="https://www.facebook.com/Mu-the-ageless-drug-free-athlete-Plant-strongvegan-826194394120198/">Mu Jin Han: ageless drug free athlete</a>
+           <br><a style="color: white; text-decoration: none;" href="https://www.riseofthevegan.com/blog/vegan-tia-blanco-surfing-world-champion">Tia Blanco: professional surfer, ISA world surf champion (x2)</a>
+           <br><a style="color: white; text-decoration: none;" href="https://www.outsideonline.com/1905351/plant-based-ultraman">Rich Roll: ultra-endurance athlete and author of Finding Ultra & Plantpower Way</a></span>
     </div>
 </div>
 
@@ -221,10 +226,10 @@ $(document).ready(function() {
           "opacity": "0",
           "transition": "opacity 1s",
       })
-      $('.continue').css({
-          "bottom": "-40px",
-          "transition": "bottom 1s",
-      })
+      // $('.continue').css({
+      //     "bottom": "-40px",
+      //     "transition": "bottom 1s",
+      // })
   });          
 });    
 
