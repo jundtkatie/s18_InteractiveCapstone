@@ -8,7 +8,7 @@ body, html {
 
 .example {
   float: left;
-  width: 80%;
+  width: 90%;
   display: inline-block;
   margin-top: 350px;
   margin-bottom: 100px;
@@ -50,24 +50,16 @@ body, html {
 }
 
 .link {
-    /*position: relative;
-    text-transform: lowercase;
-    border: 3px solid #232323;
-    text-decoration: none;
-    padding: 20px 25px;
-    background-color: white;
-    text-align: center;
-    color: #232323;*/
+
     z-index: 200;
   opacity: 1;
-right: 0;
-  position: relative;
+
+
 
   display: inline-block;
 
   font-size: 30px;
-  float: right;
-/*  border: 3px solid #232323;*/
+/*  float: right;*/
   background-color: white;
     color: #232323;
     border: 3px solid #232323;
@@ -76,8 +68,6 @@ right: 0;
     font-style: normal;
     font-weight: 700;
         text-transform: uppercase;
-
-/*    text-transform: uppercase;*/
     -webkit-transition: background-color .35s ease-in-out;
     transition: background-color .35s ease-in-out;
     padding: 11px 35px;
@@ -92,7 +82,7 @@ h3 {
     text-decoration: none;
     color: #232323;
     font-size: 20px;
-
+    position: relative;
   display: inline-block;
 }
 
@@ -304,7 +294,7 @@ span:hover {
   font-weight: 500;
   font-size: 20px;
   right: 10px;
-  bottom: -40px;
+  bottom: 40px;
   content: "\2192";
   border: 2px solid #232323;
     text-decoration: none;
