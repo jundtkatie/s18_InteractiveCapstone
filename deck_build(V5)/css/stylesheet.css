@@ -1,0 +1,116 @@
+body, html {
+margin: auto;  color: #232323;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+h1 {
+  font-size: 275px;
+  display: block;
+  position: relative;
+  font-family: freight-sans-compressed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  animation: glitch_mild 3s steps(100) infinite;
+  padding-bottom: 300px;
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  display: inline-block;
+  float: right;
+  font-family: freight-sans-condensed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  padding-right: 4%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  position: relative;
+  margin: 2% 9% 0% 31%;
+}
+
+
+.veganmeaning {
+  top: 30vh;
+  margin: auto;
+  font-weight: 600;
+  font-size: 60px;
+  color: white;
+  background-color: #232323;
+/*  box-shadow: 3px 3px 5px #232323;*/
+  padding:62px;
+  width: 80%;
+  animation: none;
+}
+
+.introtext {
+  top: 25vh;
+  line-height: 225px;
+}
+
+#masscows {
+  z-index: -100;
+  top: 2150px;
+  display: block;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
+#masspigs {
+  z-index: -100;
+  bottom: -100px;
+  right: 300px;
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  animation-fill-mode: forwards;
+}
+
+#debeaked {
+z-index: -100;
+  top: 3300px;
+  display: block;
+  position: absolute;
+  right: 0;
+  animation-fill-mode: forwards;
+}
+
+#babycow {
+  z-index: -100;
+  top: 4400px;
+  display: block;
+  position: absolute;
+  left: 200px;
+  animation-fill-mode: forwards;
+}
+
+#chickenimage {
+z-index: -100;
+  top: 4800px;
+  display: block;
+  position: absolute;
+  left: 0;
+  animation-fill-mode: forwards;
+}
+
+#deadpig {
+  z-index: -100;
+  top: 9500px;
+  display: block;
+  position: absolute;
+  left: 0;
+  animation-fill-mode: forwards;
+}
+
+#moose {
+  z-index: -100;
+  top: 12000px;
+  display: block;
+  position: absolute;
+  left: 200;
+  animation-fill-mode: forwards;
+}
