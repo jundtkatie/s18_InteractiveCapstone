@@ -1,0 +1,166 @@
+body, html {
+  color: #232323;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+}
+
+h1 {
+    font-family: freight-sans-compressed-pro, sans-serif;
+  text-decoration: none; 
+  position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    margin: auto; 
+    color: #232323;
+    padding: 8px 10px;
+    background-color: white
+/*    animation: glitch_mild 3s steps(100) infinite;*/
+}
+
+
+h2 {
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    margin: auto; 
+}
+
+a {
+  text-decoration: none;
+color: white;;
+}
+
+h1:hover {
+  border: 0px solid white;
+}
+
+#sidenav {
+    overflow: hidden;
+    position:fixed;
+    z-index: 1;
+/*    width: 15%;*/
+    top: 80px;
+    left: 50px;
+    display: inline-block;
+    padding: 60px 0px;
+    float: left;
+    font-family: freight-sans-compressed-pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    opacity: 1;
+    color: #232323;
+}
+
+#sidenav a {
+    padding: 8px 10px 8px 10px;
+    text-decoration: none;
+    margin-bottom: -3px;
+    font-size: 15px;
+    color: #232323;
+    display: block;
+}
+
+#sidenav a:hover {
+/*    border: 3px solid #232323 !important;*/
+    background: white;
+    text-decoration: underline;
+}
+
+#sidenav .subsection {
+    padding-left: 40px;
+}
+
+#sidenav .subsection:hover {
+  /*border: 3px solid #bb6c50;*/
+  text-decoration: underline;
+}
+
+.entries:hover {
+   /* border: 3px solid #bb6c50;*/
+   text-decoration: underline;
+}
+
+
+#sidenav a:active {
+    /*border: 3px solid #bb6c50;*/
+    text-decoration: underline;
+}
+
+
+
+
+.fact_section {
+  font-family: freight-sans-condensed-pro, sans-serif;
+  font-style: normal;
+  font-weight: 650;
+  margin: auto;
+  position: relative;
+/*  padding-left: 550px;
+  padding-right: 150px;*/
+  font-size: 65px;
+/*  padding-top: 100px;
+  padding-bottom: 100px;*/
+  margin: 0px 100px 0px 450px;
+}
+
+.entry {
+/*  padding-bottom: 20px;*/
+  position: relative;
+  display: inline-block;
+  background-color: #232323;
+/*  box-shadow: 3px 3px 5px black;*/
+  padding: 26px 100px;
+  margin-bottom: 50px;
+  padding-bottom: 100px;
+/*  border: 2px solid #bb6c50;*/
+  color: white;
+}
+
+.fact:hover {
+    animation: glitch_most_mild .2s steps(100);
+}
+
+.fact_section > div {
+    padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.factsubheader {
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#casestudies {
+    font-size: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-bottom: 100px;
+}
+
+#casestudies .factsource {
+    margin-left: 130px;
+}
+
+.factsource {
+/*    margin: 5% 8% -3% 20%;*/
+margin-right: 50px;
+float: right;
+position: relative;
+width: 500px;
+    font-size: .2em;
+    font-weight: 500px;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    display: block;
+/*    display: none;*/
+}
+.factsource a:hover {
+  text-decoration: underline;
+}
