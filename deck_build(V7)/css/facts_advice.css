@@ -73,7 +73,7 @@ float: right;
 }
 
 .entry {
-  float: right;
+/*  float: right;*/
   position: relative;
   display: inline-block;
   background-color: #232323;

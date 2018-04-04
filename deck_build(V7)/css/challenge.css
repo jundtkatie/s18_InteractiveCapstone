@@ -389,5 +389,6 @@ span:hover {
 
 .meatimages {
   opacity: 0;
+  z-index: -15;
 }
 
