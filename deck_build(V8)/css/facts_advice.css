@@ -158,7 +158,8 @@ h1:hover {
   font-family: freight-sans-condensed-pro, sans-serif;
   color: white  !important;
   display: block;
-  padding-right: 50px;
+  padding-right: 80px;
+  float: right;
   margin-bottom: 0;
   padding-bottom: 0;
 
