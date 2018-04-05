@@ -288,7 +288,7 @@ span:hover {
     font-size: 20px;
     position: relative;
     float: right;
-
+    box-shadow: white 3px 3px 0px;
     border: 2px solid white;
     text-decoration: none;
     padding: 5px 15px;
@@ -298,6 +298,7 @@ span:hover {
     color: #232323;
     background-color: white;
     transition: 0.3s ease;
+     box-shadow: #232323 3px 3px 0px;
   }
 
   .contentsource {
