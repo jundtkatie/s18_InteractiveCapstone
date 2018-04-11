@@ -71,6 +71,7 @@ h1:hover {
   color: #232323;
   display: block;
   border: none;
+  z-index: 1000;
 }
 
 #sidenav a:hover {
@@ -173,3 +174,10 @@ h1:hover {
   color: white;
 }
 
+.meatimages {
+    opacity: 1;
+    z-index: -1500;
+    display: block;
+      user-select: none;
+    overflow: none;
+}

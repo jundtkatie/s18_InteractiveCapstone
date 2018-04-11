@@ -21,6 +21,44 @@
 
 <title>ADVICE</title>
 
+  <style type="text/css">
+
+
+  .skrollable {
+    /*
+     * First-level skrollables are positioned relative to window
+     */
+     position:fixed;
+
+    /*
+     * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+     */
+     z-index:100;
+   }
+
+   .skrollr-mobile .skrollable {
+    /*
+        May cause issues on Android default browser (see #331 on GitHub).
+        */
+        position:absolute;
+      }
+
+      .skrollable .skrollable {
+    /*
+     * Second-level skrollables are positioned relative their parent skrollable
+     */
+     position:absolute;
+   }
+
+   .skrollable .skrollable .skrollable {
+    /*
+     * Third-level (and below) skrollables are positioned static
+     */
+     position:static;
+   }
+
+ </style>
+
 <script type="text/javascript">
 
 // SIDE NAVIGATIONS
@@ -119,18 +157,42 @@ $(function() {
 			<div class="entry">
 				<p class="fact">A plant-based diet is a challenging lifestyle to adopt, but as with many things in life, the most difficult challenges end up being the most rewarding.</p> 
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-45deg);" data-top-top="left:0px;transform:rotate(-90deg);" src="VectorImages/meat1.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">Remember to take things at your own pace, and don’t be too hard on yourself if you slip up.</p><p class="factsubheader"> This is about you making healthy, compassionate choices for yourself, animals, and the planet.</p> 
 			</div>
 			<div class="entry">
 				<p class="fact">Try to reframe the way you think about eating a plant-based diet. It might seem tricky, but don’t think of being vegan as a limitation. This will only make you feel as though you are missing out.</p> 
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(180deg);" data-top-top="left:-700px;transform:rotate(360deg);" src="VectorImages/meat2.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">The most important thing to keep in mind is that there is no such thing as a perfect vegan.</p><p class="factsubheader"> If you make a mistake, or chose to “break vegan” for any number of reasons, it doesn’t change the larger positive impact that your diet has created.</p> 
 			</div>
 			<div class="entry">
 				<p class="fact">Being a vegan is not all or nothing – it is better for your health, the environment, and the animals to be vegan, at whatever degree you can manage, than to do nothing at all.</p> 
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/meat5.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">Try finding a vegan community</p>
 				<p class="factsubheader">It’s difficult to face any challenge alone, and transitioning to a plant-based diet is no exception, particularly when so much of our social culture revolves around food.</p> 
@@ -141,6 +203,14 @@ $(function() {
 				<p class="factsubheader">There are dietary vegans, and lifestyle vegans.<br>There are people who view veganism as an all-or-nothing choice.<br>There are vegans who see their veganism as an ideal, rather than the law.</p>
 				<p class="factsubheader">What matters most is your desire in your heart to improve the lives of animals, other people, the environment, or your own health. As a vegan, it is up to you to decide what matters most, and how you decide to act upon those values is up to you to decide.</p>
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(90deg);" data-top-top="left:0px;transform:rotate(180deg);" src="VectorImages/meat6.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">You can feel good knowing that you won’t have sentenced anyone else to death while you’re thinking about why you’re thankful for your life.</p> 
 			</div>
@@ -149,12 +219,28 @@ $(function() {
 			<div class="entry">
 				<p class="fact">The “Vegan Police” don’t exist. No matter what anyone tries to make you believe, veganism isn’t a religion, and it is absolutely not about perfection. Choosing a vegan diet (or lifestyle) is about doing your best to minimize suffering.</p> 
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(180deg);" data-top-top="left:-700px;transform:rotate(360deg);" src="VectorImages/meat7.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">There are people who take it upon themselves to point out instances of “failure” in vegans in their lives. It is very difficult for most people to attempt a vegan diet, and that challenge increases when they feel like the people around them are waiting for them to fail.</p> 
 			</div>
 			<div class="entry">
 				<p class="fact">You will, more likely than not, encounter someone who does not want to accept your lifestyle or diet as a vegan.</p><p class="factsubheader"> It it still culturally normal and acceptable to eat meat, so it may appear to be socially extreme to change your lifestyle, habits, and choices – but that doesn’t mean that your choices are wrong, and these awkward confrontations can be an opportunity to educate your friends. </p> 
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-180deg);" data-top-top="left:-700px;transform:rotate(-360deg);" src="VectorImages/meat3.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">The best way to combat negativity is to arm yourself with facts.</p>
 			</div>
@@ -165,6 +251,14 @@ $(function() {
 				<p class="fact">Not everyone will be as excited as you are about your new dietary style.</p> 
 				<p class="factsubheader">One of the easiest ways to get your friends interest in learning more about plant-based food is share it with them. Try cooking something they couldn’t picture being vegan (e.g., creamy vegan mac ‘n’ cheese, fish-free fillets, Korean “barbecue,” etc.), and wow their taste buds. Use this as an opportunity to show your friends what they are missing out on.</p> 
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/meat9.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">It may be helpful to hold off on mentioning that a dish is vegan until after everyone has tried it.</p> 
 				<p class="factsubheader">Many people, vegans included, hold preconceived notions about what it means to follow a plant-based diet or lifestyle. By waiting to announce that your amazing Mac ‘N’ Cheese is actually vegan and completely dairy free, your friends will have had the opportunity to feel more open to trying the dish.</p> 
@@ -173,6 +267,14 @@ $(function() {
 				<p class="fact">It’s best to let your relatives know ahead of time that you’re vegan. </p> 
 				<p class="factsubheader">You can offer to prepare a dish to share or ask to help in the kitchen so that you’ll have a main course to enjoy.</p> 
 			</div>
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-180deg);" data-top-top="left:-700px;transform:rotate(-360deg);" src="VectorImages/meat8.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 			<div class="entry">
 				<p class="fact">Try bringing your own food to social gatherings</p> 
 				<p class="factsubheader">If you go to a party, there will likely be “accidentally vegan” chips as well as salsa, soda, fruit platters, and more vegan-friendly foods for you to eat. But if you don’t want to take the risk of there not being any options for you, bring your own food.
@@ -207,12 +309,28 @@ $(function() {
 					<p class="factsource"><a href="http://www.centerforfoodsafety.org/files/animal_drug_es_10_26_77814.pdf" target="blank">"America's Secret Animal Drug Problem". Center for Food Safety. Executive Summary September 2015</a></p>
 					<p class="factsource"><a href="https://www.drugs.com/vet/dairy-cattle-a.html" target="blank">"Treatments for Dairy Cattle A-Z". Drugs.com: Know more. Be sure.</a></p>
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(180deg);" data-top-top="left:-700px;transform:rotate(360deg);" src="VectorImages/meat4.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Dairy products are literally addictive.</p> 
 					<p class="factsubheader">Casein, a protein found in all dairy products, releases opiates called casomorphins during digestion.  These casomorphins attach to the dopamine receptors and trigger addiction in those who consume them.</p> 
 					<p class="factsource"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4487594/" target="blank">Nguyen, Duc Doan, et al "Formation and Degradation of Beta-Casomorphins in Dairy Processing". Critical Reviews in Food Science and Nutrition. 2015 Dec 6; 55(14): 1955-1967</a></p> 
 					<p class="factsource"><a href="http://www.pcrm.org/health/diets/ffl/newsletter/breaking-the-cheese-addiction-step-3-cleansing-the" target="blank">"Breaking the Cheese Addiction: Step 3 Cleansing the Palate". Physicians Committee for Responsible Medicine</a></p> 
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/meat10.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Cheese itself is the single best food for compromising human health.</p> 
 					<p class="factsubheader">The manufacturing of cheese includes the addition of large amounts of salt, and results in a highly processed product. As an animal product, it is subject to bioaccumulation, and is naturally high in saturated fats, cholesterol, and hormones. Cow’s milk is a hormonal fluid, designed by nature to turn a calf into a full grown cow. When you chose to consumer milk or other dairy products, you are also consuming the hormones, antibiotics, and other environmental toxins that the cow was subjected to while producing that product.</p>
@@ -226,6 +344,14 @@ $(function() {
 				</div>
 			</div>
 			<div id="eatingout">
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/needle.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Eating out can be challenging when following a vegan diet, but there is no need to let that stop you from enjoying your life! Here are some tips to help you eat vegan at any restaurant:</p> 
 					<p class="factsubheader">Call Ahead. If you have plans to go to a restaurant but aren’t sure if there will be vegan options, just give them a call and ask. If the restaurant really doesn’t have vegan options, you can change your plans. Calling ahead also let’s the chef know ahead of time that you are coming so if they want to prepare something special ahead of time they have the time to do so. This allows you to relax when you get to the restaurant because you already know the options. You can also try looking the menu up online.  </p>
@@ -238,6 +364,14 @@ $(function() {
 				</div>
 			</div>
 			<div id="groceries">
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(180deg);" data-top-top="left:-700px;transform:rotate(360deg);" src="VectorImages/meat12.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Eat more whole foods</p>
 					<p class="factsubheader">Eating more whole foods will not only help you cut out some of the more processed foods from your diet by increasing your intake of nutrients from fresh foods, but it will also save you money. Many processed vegan foods are more expensive than their omnivore counterparts, which is why omnivores tend to believe that vegan is synonymous with an expensive diet.</p>
@@ -247,6 +381,14 @@ $(function() {
 					<p class="fact">Veganism is not expensive.</p> 
 					<p class="factsubheader">Beans, rice, potatoes, and veggies are all some of the cheapest, easiest to find, and healthiest things you could eat.<br><br>Meat, dairy, and eggs are expensive… And so are health bills! You may not be worried about heart disease, cancer, and strokes, yet. But diets high in animal protein, cholesterol (which is nearly impossible to consume with a vegan diet) and saturated fat play a key role in the leading causes of death in America.</p>
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/meat13.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">1 serving of lentils (1 cup) (18g of protein) costs approximately $0.20</p>
 					<p class="fact">1 serving of steak (4 oz.) (22g of protein) costs approximately $4.00</p> 
@@ -255,6 +397,14 @@ $(function() {
 					<p class="fact">When you go grocery shopping, come up with meal ideas before making your grocery list.</p>
 					<p class="factsubheader">Stir fry, pasta, and chili are inexpensive and easy to make (and they are also vegan!) Once you are at the store, be sure to stock up on staples (beans, grains, nuts, and frozen fruits/vegetables), and when possible, buy them in bulk. </p>
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/meat14.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;"> 
+
 				<div class="entry">
 					<p class="fact">Animal-derived ingredients may be hidden in your food – but don’t stress out about it.</p> 
 					<p class="factsubheader">Sometimes, it’s not obvious that animal derived ingredients are in food products.</p>
@@ -262,6 +412,14 @@ $(function() {
 				</div>
 			</div>
 			<div id="junkfood">
+
+	<img class="meatimages" data-0-bottom-center="left:70px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(1480deg);" data-top-top="left:-740px;transform:rotate(1720deg);" src="VectorImages/feather5.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">If you are really struggling with the idea of living the rest of your life without your favorite food, you're not alone!</p> 
 					<p class="factsubheader">Many vegans weakness from time to time, and even the old-timers miss foods too. There are vegan replacements, substitutes, and alternatives for just about any craving you might have that can help make it easier to transition away from animal products.</p> 
@@ -273,12 +431,28 @@ $(function() {
 					<p class="fact">Easy vegan mac and cheese:</p>
 					<p class="factsubheader">Combine ½ cup of pasta, ½ cup of water, and a pinch of salt in a microwaveable bowl. Microwave for 4-5 minutes. Add 2 tbsp of almond milk, 2 tbsp of vegan butter, 2 tbsp of nutritional yeast, and another pinch of salt. Stir. Microwave again for 30 seconds. Sprinkle with paprika, or your favorite mac and cheese seasonings, and enjoy!</p> 
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:10px; transform:rotate(0deg);" data-center-center="left:30px;transform:rotate(480deg);" data-top-top="left:-720px;transform:rotate(720deg);" src="VectorImages/feather2.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Just because you’re a vegan doesn’t mean you have to limit yourself to a diet of kale, brown rice, and vegetables. A lot of foods are coincidentally vegan, making it easy to scavenge some vegan options when you are in a pinch.</p> 
 					<p class="factsubheader">Oreos, Duncan Hines Creamy Home-Style Frosting and cake mixes, Jell-O Instant Pudding Mix, Smucker’s Marshmallow Ice Cream Topping, Hershey’s Chocolate Syrup, Betty Crocker’s Bac-O’s Bacon Flavor Bits, Pillsbury Crescent Rolls, Ritz Crackers, Unfrosted Pop-Tarts, Pepperidge Farm Puff Pastry Sheets, Lindt Excellence Cocoa Bars (in 70%, 85% and 90%), Famous Amos Sandwich Cookies (in Chocolate, Oatmeal Macaroon, Peanut Butter and Vanilla), Goya Flan, Nutter Butters, Nature Valley Crunchy Granola Bars (in Apple Crisp, Cinnamon, Peanut Butter, Peanut Butter Crunch, Roasted Almond and Maple Brown Sugar), Nabisco Original Graham Crackers, Krispy Kreme Fruit Pies (in Apple, Cherry and Peach), Thomas’s New York Style Bagels (in Blueberry, Cinnamon Swirl, Everything and Plain), Super Pretzel Baked Soft Pretzel, Chocolate Chip Teddy Grahams, DQ’s Star Kiss Bars, Sara Lee’s Frozen Pies (in Cherry and Apple), Mast Brother’s Chocolate, Trader Joe’s Speculoos Cookies, Trader Joe’s Pound Plus Chocolate Bars, Trader Joe’s Soft-Baked Snickerdoodles, and Ghiradelli Double Chocolate Brownie Mix</p>
 				</div>
 			</div>
 			<div id="notmeat">
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-180deg);" data-top-top="left:-700px;transform:rotate(-360deg);" src="VectorImages/meat3.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">There are plenty of non-meat protein sources.</p> 
 					<p class="factsubheader">1 cup of cooked lentils (18g)<br>1 cup of cooked black beans (15g)<br>1 veggie burger patty (13g)<br>4 oz of firm tofu (11g)<br>1 medium bagel (9g)<br>1 cup of cooked pasta (8g)<br>1 cup of cooked quinoa (8g)<br>2 Tbsp of peanut butter (8g)<br>1 cup of plain soy milk (7g)<br>6 oz of plain soy yogurt (6g)<br>2 slices of whole wheat bread (5g)<br>1 medium potato (4g)</p>
@@ -288,6 +462,14 @@ $(function() {
 					<p class="fact">At home, being vegan is as easy as eating any other kind of diet.</p> 
 					<p class="factsubheader">If you stick to only buying vegan groceries, then you will only have vegan food in your house. This makes grabbing a snack or cooking a meal easier because all of your options will already be vegan. </p> 
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-45deg);" data-top-top="left:0px;transform:rotate(-90deg);" src="VectorImages/meat1.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Have you ever heard of the word kwashiorkor?</p> 
 					<p class="factsubheader">No? That is the proper term for protein deficiency. There isn’t any necessary nutrient found in animal products that you can’t get from a plant source. In fact, all protein originally comes from plants!</p> 
@@ -296,6 +478,14 @@ $(function() {
 					<p class="fact">You won’t suffer from a loss of iron, at least not because you have stopped eating meats.</p> 
 					<p class="factsubheader">In fact, a serving of kale has more iron than beef! But if iron deficiency is a concern for you, kale, white beans, spirulina, spinach, lentils, and quinoa are all great sources of iron... Or you could take a vitamin.</p> 
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(180deg);" data-top-top="left:-700px;transform:rotate(360deg);" src="VectorImages/meat2.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Vegan meals can provide all the nutrients that we need, minus all the saturated fat, cholesterol, and other icky stuff found in animal flesh, eggs, and dairy foods!</p> <p class="factsubheader">A vegan diet still provides you with the same amount of nutrients as an omnivore diet, you’ll just find those nutrients in much healthier places.</p> 
 					<p class="factsource"><a href="http://circ.ahajournals.org/content/105/25/e197.full" target="blank">McDougall, John "Plant Foods Have a Complete Amino Acid Composition". Circulation. June 25, 2002</a></p>
@@ -304,6 +494,14 @@ $(function() {
 				</div>
 			</div>
 			<div id="cooking">
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/meat5.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">There is a misconception that cooking for a vegan diet is time consuming and labor intensive.</p> 
 					<p class="factsubheader">But if you look at the actual ingredients (plants), a vegan diet is completely possible without any cooking at all!</p> 
@@ -312,6 +510,14 @@ $(function() {
 					<p class="fact">The best way to cut down on the time and energy that you are spending in the kitchen is to stop eating meat, eggs, and dairy.</p> 
 					<p class="factsubheader">These animal products spoil easily and (for the most part) require cooking. When compared to a plant-based diet where nearly all of the ingredients can be cooked, but do not require it for them to be safe to consume, time and energy don’t seem as problematic.</p> 
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(90deg);" data-top-top="left:0px;transform:rotate(180deg);" src="VectorImages/meat6.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">For every egg in a baking recipe, swap a ripe mashed banana</p>
 					<p class="factsubheader">Or chia seeds (1 tbsp + 3 tbsp water)</p>
@@ -322,6 +528,14 @@ $(function() {
 				</div>
 			</div>
 			<div id="travel">
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(180deg);" data-top-top="left:-700px;transform:rotate(360deg);" src="VectorImages/meat7.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Traveling on a plant-based diet can be much easier than you think!</p> 
 					<p class="factsubheader">It helps to research your destination, apps like HappyCow are useful for finding hidden vegan/vegetarian places near your destination. </p>
@@ -332,14 +546,38 @@ $(function() {
 				</div>
 			</div>
 			<div id="planahead">
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-180deg);" data-top-top="left:-700px;transform:rotate(-360deg);" src="VectorImages/meat3.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">Packing your own food for lunches is a great way to ensure that you will always have food available.</p> 
 					<p class="factsubheader">Simple snacks like veggie sticks with hummus, dried fruit, trail mix, bars, nuts, and fresh fruit are convenient to grab if you are in a hurry, and in combination they create a very satisfying meal.</p> 
 					<p class="factsubheader">No matter how organized you are, there will be times when you find yourself in a not-so-vegan predicament. Try to keep your favorite vegan snacks around (in your purse, backpack, locker, car, etc.) for these dire instances, they will help tide you over until you can eat a proper meal.</p> 
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:30px; transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-180deg);" data-top-top="left:-700px;transform:rotate(-360deg);" src="VectorImages/meat8.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">If you are really in a pickle, 7 Eleven and Taco Bell are crowd favorites among vegans.</p>
 				</div>
+
+	<img class="meatimages" data-0-bottom-center="left:-500px;transform:rotate(0deg);" data-center-center="left:-270px;transform:rotate(-90deg);" data-top-top="left:0px;transform:rotate(-180deg);" src="VectorImages/meat9.svg" style="
+	z-index: -500;
+  	display: block;
+  	position: absolute;
+  	animation-fill-mode: forwards;
+    max-width: 250px;">
+
 				<div class="entry">
 					<p class="fact">If you worry about not having the time or brain power to come up with a meal from scratch during the week, try preparing a large portion of beans and rice. You can eat this with other dishes that you do have time to prepare throughout the week.</p> 
 				</div>
@@ -360,6 +598,11 @@ $(function() {
       });
 </script>
 <!-- WANKER: Reveal the above content on browser resizing. -->
+
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript">
+	var s = skrollr.init();
+</script>
 
 </body>
 </html>
